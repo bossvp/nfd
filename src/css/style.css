@@ -12,6 +12,19 @@ html {
   font-family: "Rajdhani", sans-serif;
 }
 
+
+
+#cont{
+  min-height: 460px;
+ 
+}
+
+
+
+
+
+
+
 img {
   max-width: 100%;
   display: block;
