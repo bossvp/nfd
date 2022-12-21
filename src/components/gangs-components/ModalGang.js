@@ -2,10 +2,13 @@ import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 
-function ModalGang() {
+function ModalGang( {state, setState, text} ) {
   const [show, setShow] = useState(true);
 
-  const handleClose = () => setShow(false);
+  const handleClose = () => {
+    setShow(false)
+    setState({...state, [text.name]:false})
+  };
   const handleShow = () => setShow(true);
   return (
     <>
@@ -25,17 +28,30 @@ function ModalGang() {
         <Modal.Body className="background__modal">
           <div className="body__modal">
             <div className="body__modal-header">
-              <h2>Make a Gang</h2>
-              <p>To start a clan you need a "temp-gang" box</p>
+              <h2>{text.name} a Gang</h2>
+              <p>{text.info}</p>
             </div>
             <div className="body__modal-input">
-              <p>Gang name</p>
-              <input type="text" placeholder="Enter a name"/>
-              <p>temp-gang box</p>
+              { text.name === "Make" 
+                ?
+                <>
+                  <p>Gang name</p>
+                  <input type="text" placeholder="Enter a name"/>
+                  <p>temp-gang box</p>
+                </>
+                : 
+                <>
+                  <input type="text" placeholder="GANGS" style={{
+                    margin: "1em 0 ",
+                    background:"none",
+                    borderBottom: "2px solid rgb(124,92,44)"
+                    }}/>
+                </>
+              }
             </div>
            
             <div className="body_modal__footer">
-            <p className="text-center text-white fw-bolder text-white h2">No temp-gang box yet</p>
+            <p className="text-center text-white fw-bolder text-white h2">{text.details}</p>
 
             <div className="body_modal__footer-buttons">
                 <div className="modal__footer-img"></div>
@@ -44,7 +60,7 @@ function ModalGang() {
                         Cancel
                     </button>
                     <button>
-                        Make
+                    {text.name}
                     </button>
                 </div>
             </div>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Footer from "../Footer";
 import CardGang from "../gangs-components/CardGang";
 import MakeAndJoin from "../gangs-components/MakeAndJoin";
@@ -6,6 +6,11 @@ import ModalGang from "../gangs-components/ModalGang";
 
 
 function Gangs() {
+  const [emodal, setModal] = useState({
+    Make: false,
+    Join:false,
+  })
+
   return (
     <div className="background__gangs">
       <div className="container-fluid container__gangs">
@@ -21,9 +26,29 @@ function Gangs() {
         </div>
 
         <div className="row">
-       {/*    <MakeAndJoin/> */}
-        {/*   <CardGang/> */}
-          <ModalGang />
+
+          <MakeAndJoin state={emodal} setState={setModal}/>
+        {/* <CardGang/>  */}
+        { emodal.Make &&
+          <ModalGang state={emodal} setState={setModal} text={
+            {
+              name: "Make",
+              info: `To start a clan you need a "temp-gang" box`,
+              details: "No temp-gang box yet"
+            }
+          }/> 
+        }
+
+        {emodal.Join &&
+          <ModalGang state={emodal} setState={setModal} text={
+            {
+              name: "Join",
+              info: "To join a clan you need a gang membership",
+              details: "No membership NFT yet"
+            }
+          }/> 
+        }
+         
         </div>
       </div>
       <Footer />
