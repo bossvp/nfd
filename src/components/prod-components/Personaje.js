@@ -2,9 +2,9 @@ import React from 'react'
 import Shark from "../../img/shark.png"
 function Personaje() {
   return (
-    <div className='container'>
+    <div className='container max-vh-30' id='cont' style={{height:"460px !important", maxHeight:"460px !important"}}>
 
-        <div className="row" style={{marginTop:"100px"}} >
+        <div className="row" style={{marginTop:"4rem"}} >
             <p className='h1 text-uppercase text-white fw-bold' style={{marginLeft:"100px"}}>Selected item  <span className=' h4 ms-4 text-uppercase text-white fw-bold'>character</span></p>
            
             <div className="col-12 col-md-6">

@@ -46,14 +46,15 @@ function Prod() {
                 <p className="fw-bold pt-2">Hugo "Shark" Cruz</p>
                 <span></span>
               </div>
+
               <div className="card__prod">
                 <img src={Phi} alt="" />
                 <p className="fw-bold pt-2">PHS ( 28657)</p>
                 <span></span>
               </div>
-              <div className="card__prod">
-                <img src={PadLock} style={{width:"8em",height:"8em"}} />
-                <button>SELECT BAG</button>
+              <div className="card__prod ">
+                <img src={PadLock} style={{width:"8em",height:"8em"}}  />
+                <button style={{width:"10em"}} className="btn btn-dark btn-lg btn-block position-absolute bottom-0 m-2 w-9em" >SELECT BAG</button>
               </div>
               <div className="card__prod">
                 <img src={Satin} alt="" />
@@ -72,21 +73,26 @@ function Prod() {
                 <p className="fw-bold pt-2">Empy slot</p>
                 <span></span>
               </div>
-              <div className="card__prod__locked">
-                <img src={Base} alt="" />
-                <p className="fw-bold pt-2">Empy slot</p>
-                <span></span>
+
+
+              <div className="card__prod__locked_slot">
+                <p className="fw-bold pt-2">LOCKED SLOT</p>
+                <img src={PadLock} alt="" />
+                
               </div>
-              <div className="card__prod__locked">
-                <img src={Base} alt="" />
-                <p className="fw-bold pt-2">Empy slot</p>
-                <span></span>
+              <div className="card__prod__locked_slot">
+                
+                <p className="fw-bold pt-2">LOCKED SLOT</p>
+                <img src={PadLock} alt="" />
+            
               </div>
-              <div className="card__prod__locked">
-                <img src={Base} alt="" />
-                <p className="fw-bold pt-2">Empy slot</p>
-                <span></span>
+              <div className="card__prod__locked_slot">
+                
+                <p className="fw-bold pt-2">LOCKED SLOT</p>
+                <img src={PadLock} alt="" />
               </div>
+
+
             </div>
 
             <div className="row mt-5">

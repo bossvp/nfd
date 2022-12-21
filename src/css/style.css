@@ -19,9 +19,87 @@ html {
  
 }
 
+.blend__container__options{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+}
 
+.blend__box__button{
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+  /* border-radius: 15px;
+  border: 0.3em solid #561D05;
+  background-color: #CA6D28; */
+  /* width: 25em;
+  height: 3.5em; */
 
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  background: rgba(10, 10, 10, 0.5);
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 0.5rem 1.8rem;
+  transition: background 0.2s ease-in-out;
+}
+
+.blend__box__button:hover{
+  background: rgba(155, 153, 153, 0.5);
+  color: rgba(255, 255, 255, 1);
+
+  
+}
+
+.blend__box__button img{
+  width: 1.5em;
+  pointer-events: none;
+
+}
+
+.blend__box__button p{
+
+  margin: 0;
+}
+
+.blend__box__options{
+  display: none;
+  
+  position: absolute;
+  background-color: #000000;
+  color: white;
+  
+  
+  top: 4em;
+  z-index: 1000;
+}
+.blend__box__options div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      width: 15em;
+      border: .1em solid #561D05;
+      cursor: pointer;
+      
+      font-size: 1.4em;
+      transition: .3s;
+      padding: .2em .8em;
+      
+}
+
+.blend__box__options :hover{
+      background-color: #8462498f;
+      color: #caa810;
+}
+
+.select_blend_active .blend__box__options{
+    display: block;
+}
 
 
 
@@ -623,6 +701,30 @@ header .icono_bar{
   margin: 0.4rem;
 }
 
+.card__prod__locked_slot {
+  display: flex;
+  
+  align-items: center;
+  justify-content: space-between;
+
+  height: 50px;
+  background: rgba(10, 10, 10, 0.5);
+  position: relative;
+  transition: border 0.1s ease-in-out;
+  padding: 1rem ;
+}
+.card__prod__locked_slot:hover {
+  border: 3px solid rgba(245, 241, 241, 0.87);
+}
+
+.card__prod__locked_slot img {
+  width: 2.8rem;
+}
+.card__prod__locked_slot p {
+  font-style: ;
+  margin: 0;
+}
+
 .table__layout {
   color: white;
 }
@@ -761,6 +863,10 @@ header .icono_bar{
   font-size: 4.8rem !important;
   margin-top: 9rem;
 }
+
+
+
+
 
 .score__content {
   width: 52%;
@@ -943,6 +1049,16 @@ header .icono_bar{
   max-height: 420px;
   object-fit: cover;
 }
+.season__images img:hover {
+  border: 4px solid rgb(255, 255, 255);
+}
+.season__images .card__state__select{
+  border: 4px solid rgb(228, 2, 2);
+}
+.season__images .card__state__select:hover{
+  border: 4px solid rgb(228, 2, 2);
+}
+
 .confirm-mision {
   display: flex;
   width: 100%;
@@ -967,6 +1083,7 @@ header .icono_bar{
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  
 }
 .container__buttons button {
   display: block;
@@ -983,6 +1100,9 @@ header .icono_bar{
 }
 .container__buttons button:hover {
   background: rgba(255, 255, 255, 0.4);
+}
+.container__buttons button:visited {
+  background: red;
 }
 
 .tabla_mision {

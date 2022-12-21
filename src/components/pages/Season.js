@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Footer from "../Footer";
 import ImagesGroup from "../season-components/ImagesGroup";
 import InfoMision from "../season-components/InfoMision";
@@ -6,6 +6,8 @@ import MissionCards from "../season-components/MissionCards";
 import OptionsMission from "../season-components/OptionsMission";
 
 function Season() {
+  const [ePage, setPage] =useState(true)
+
   return (
     <div className="background__season">
       <div className="container-fluid container__season">
@@ -18,10 +20,19 @@ function Season() {
           </div>
         <div className="row ">
          
-          {/*  <ImagesGroup />
-         <InfoMision /> */}
-          <MissionCards/>
-          <OptionsMission/>
+        {ePage &&
+          <>
+            <ImagesGroup  btnStart={setPage}/>
+            <InfoMision />
+          </>
+        }
+         {!ePage &&
+            <>
+              <MissionCards/>
+              <OptionsMission/>
+            </>
+         }
+          
         </div>
       </div>
 

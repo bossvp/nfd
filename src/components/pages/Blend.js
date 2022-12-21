@@ -1,10 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import Card from "../blend-components/Card";
 import Footer from "../Footer";
 import Hat from "../../img/hat.png";
 import Level from "../../img/level.png";
 import Moustache from "../../img/moustache.png";
+import iconOptions from "../../img/season/options.png"
+
 function Blend() {
+  const [value, setValue] = useState("MD COMMON")
+  const [active, setActive] =useState(false)
+
+  function show(p) {
+      setValue(p)
+      setActive(!active)
+      
+  }
+
   return (
     <div className="background__blend">
       <div className="container-fluid">
@@ -13,6 +24,8 @@ function Blend() {
             <p className="text-uppercase fw-bold prod__title ms-4">Blend</p>
 
             <div className="row mb-2">
+
+            
               <div className="col-12 col-md-6">
                 <p className="text-uppercase fw-normal prod__subtitle">
                   Select your items
@@ -22,7 +35,29 @@ function Blend() {
                 </p>
               </div>
               <div className="col-12 col-md-6 d-flex justify-content-end align-items-center">
-                <button className="btn_prod">md common</button>
+                {/* <button className="btn_prod d-flex gap-3">
+                  md common
+                  <img src={iconOptions} alt="" style={{width: "1.5em"}} />
+                  </button> */}
+
+
+                
+                  <div className={`blend__container__options ${active ? "select_blend_active" : ""}`} onClick={()=>setActive(!active)}>
+
+                    <div className="blend__box__button">
+                        <p>{value}</p>
+                        <img src={iconOptions} alt="" />
+                    </div>
+
+                    <div className="blend__box__options">
+                        <div onClick={()=>show('option 1')}>option 1</div>
+                        <div onClick={()=>show('option 2')}>option 2</div>
+                        <div onClick={()=>show('option 3')}>option 3</div>
+                        <div onClick={()=>show('option 4')}>option 4</div>
+                    </div>
+                </div>
+
+                
               </div>
             </div>
 
