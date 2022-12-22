@@ -5,7 +5,14 @@ function Personaje() {
     <div className='container max-vh-30' id='cont' style={{height:"460px !important", maxHeight:"460px !important"}}>
 
         <div className="row" style={{marginTop:"4rem"}} >
-            <p className='h1 text-uppercase text-white fw-bold' style={{marginLeft:"100px"}}>Selected item  <span className=' h4 ms-4 text-uppercase text-white fw-bold'>character</span></p>
+            <div className='h1 text-uppercase text-white fw-bold d-flex justify-content-between align-items-center' >
+            <p className='h1 text-uppercase text-white fw-bold'>
+              Selected item  
+              <span className=' h4 ms-4 text-uppercase text-white fw-bold'>character</span>
+            </p>
+            <button className='btn p-0' style={{background:"#FC653D", color:'white', width:'6em', fontSize:'.5em', fontWeight:"bold" }}>CHANGE</button>
+            </div>
+            
            
             <div className="col-12 col-md-6">
 
@@ -72,7 +79,10 @@ function Personaje() {
                     <td>25</td>
                   </tr>
                 </table>
+
+                
             </div>
+            <p style={{textAlign: "center", fontWeight:"bold"}}>Expires on: 30 December <br /> 2022 at 18:24:13</p>
         </div>
     </div>
   )
