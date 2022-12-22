@@ -1,10 +1,19 @@
 import React from 'react'
+import { useState } from 'react'
 import CardBattle from '../battle-components/CardBattle'
 import Equip from '../battle-components/Equip'
 import Vs from '../battle-components/Vs'
 import Footer from '../Footer'
+import Lieutenantt from "../../img/battle/lieutenant-2.png";
+import Lieutenant from "../../img/battle/lieutenant-neutral.png";
+
+
 
 function Battle() {
+  const [eTab, setTab] = useState(true)
+  let bg={
+    background: "#754F38"
+  }
   return (
     <div className="background__battle">
 
@@ -15,24 +24,34 @@ function Battle() {
               equip your character and start fighting!
             </h2>
           
-          </div>
-        <div className="row ">
-            <div className="col-12">
-            <div className="layout__battle">
-        {/*     <CardBattle/>
-         <Vs/>
-         <CardBattle/> */}
-        
-            </div>
+      </div>
 
-             <Equip/>
+      <div className="row ">
+        <div className="col-12">
+              <div className="layout__battle">
+                
+              { eTab &&
+                <Equip/>
+              }
+              
+              {!eTab &&
+                <>
+                  <CardBattle img={Lieutenant} text={"100"} width={100}/>
+                  <Vs/>
+                  <CardBattle img={Lieutenantt} text={"50"} width={50}/>
+                </>
+              }
+          
+              </div>
+
+              
             </div>
            
        
         </div>
         <div className='battle__buttons'>
-            <button>Equip</button>
-            <button>Macth</button>
+            <button onClick={()=>setTab(true)} style={eTab ? bg : {}}>Equip</button>
+            <button onClick={()=>setTab(false)} style={!eTab ? bg : {}}>Macth</button>
         </div>
       </div>
       <Footer/>

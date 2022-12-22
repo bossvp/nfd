@@ -26,9 +26,9 @@ function Gangs() {
         </div>
 
         <div className="row">
-
+        {/* <CardGang/> */}
           <MakeAndJoin state={emodal} setState={setModal}/>
-        {/* <CardGang/>  */}
+        
         { emodal.Make &&
           <ModalGang state={emodal} setState={setModal} text={
             {

@@ -18,6 +18,7 @@ import Battle from './components/pages/Battle';
 import CoffeShop from './components/pages/CoffeShop';
 import Error from './components/pages/Error';
 import Stats from './components/pages/Stats';
+import CardGang from './components/gangs-components/CardGang';
 
 
 
@@ -82,6 +83,20 @@ const router = createBrowserRouter([
     ],
         errorElement:<Error/>
   },
+  {
+    path: "/gangs/rank",
+    element: <Layout />,
+    children: [
+      {
+        index:true,// al visitar layout se muestra este elemento de manera directa
+        element:<CardGang/>,
+      },
+     
+    ],
+        errorElement:<Error/>
+  },
+
+
   {
     path: "/battle",
     element: <Layout />,
