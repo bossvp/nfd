@@ -26,10 +26,10 @@ function Assets() {
           <h3 className="container__title-title">wallet</h3>
         </div>
 
-        <div className="row mt-5">
+        <div className="row mt-5" >
         
        
-          <>
+    
             {/* selects */}
             <div className="col-12 ">
                 <div className="float-end">
@@ -71,6 +71,7 @@ function Assets() {
                   </div>
                 </div>
             </div>
+
             {/* cards */}
             <div className="container__cards__blend">
                 {cards}
@@ -97,7 +98,7 @@ function Assets() {
                 <Card />
                 <Card />
             </div>
-          </>
+        
         
          
 

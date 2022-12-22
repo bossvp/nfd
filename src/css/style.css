@@ -560,7 +560,7 @@ header .icono_bar{
   max-width: 100%;
   border: 9.5px solid transparent;
   position: relative;
-  margin-top: 6rem;
+  
   height: 460px;
   max-height: 460px;
 }
