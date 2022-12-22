@@ -16,7 +16,7 @@ function CoffeShop() {
 
         <div className="row ">
             <div className="col-12 col-xl-3 my-2">
-                <CardCoffe/>
+            <CardCoffe/>
             </div>
             <div className="col-12 col-xl-3 my-2">
             <CardCoffe/>

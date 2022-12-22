@@ -4,7 +4,8 @@ import Moustache from "../../img/moustache.png";
 function CardCoffe() {
   return (
     <div className="cardcoffe" style={{ marginTop: "100px" }}>
-      <div className="container__coffe">
+    
+      <div className="cont__coffe">
         <img src={Printer} alt="" className="container__coffe-img" />
         <p className="container__coffe-descripcion">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
