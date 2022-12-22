@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Card from "../blend-components/Card";
 import Footer from "../Footer";
 import Form from "react-bootstrap/Form";
@@ -7,6 +7,26 @@ import WalletCard from "../wallet-components/WalletCard";
 import FormWallet from "../wallet-components/FormWallet";
 
 function Wallet() {
+  const [eTabs, setTabs] = useState(
+    {
+      Cards:true,
+      Table: false,
+    })
+
+    function seteo(prop) {
+      const tabs ={
+
+        Cards:false,
+      Table: false,
+      }
+
+      setTabs({...tabs, [prop]:true})
+    }
+
+
+    let btnStyles = {
+      background: "#C74C39"
+    }
   return (
     <div className="background__wallet">
       <div className="container-fluid container__wallet">
@@ -15,48 +35,83 @@ function Wallet() {
         </div>
 
         <div className="row mt-5">
-        {/* 
-        selects
-        <div className="col-12 ">
-            <div className="float-end">
-              <div className="container_selects">
-                <div>
-                  <Form.Select
-                    aria-label="Default select example"
-                    className="fondoSelect"
-                  >
-                    <option>Rarity filter</option>
-                    <option value="1">Common</option>
-                    <option value="2">Epic</option>
-                    <option value="3">Mytic</option>
-                  </Form.Select>
+        
+        { eTabs.Cards &&
+          <>
+            {/* selects */}
+            <div className="col-12 ">
+                <div className="float-end">
+                  <div className="container_selects">
+                    <div>
+                      <Form.Select
+                        aria-label="Default select example"
+                        className="fondoSelect"
+                      >
+                        <option>Rarity filter</option>
+                        <option value="1">Common</option>
+                        <option value="2">Epic</option>
+                        <option value="3">Mytic</option>
+                      </Form.Select>
+                    </div>
+            
+                    <div>
+                      <Form.Select
+                        aria-label="Default select example"
+                        className="fondoSelect"
+                      >
+                        <option>Orden Direction</option>
+                        <option value="1">Common</option>
+                        <option value="2">Epic</option>
+                        <option value="3">Mytic</option>
+                      </Form.Select>
+                    </div>
+                    <div>
+                      <Form.Select
+                        aria-label="Default select example"
+                        className="fondoSelect"
+                      >
+                        <option>Sort By</option>
+                        <option value="1">Common</option>
+                        <option value="2">Epic</option>
+                        <option value="3">Mytic</option>
+                      </Form.Select>
+                    </div>
+                  </div>
                 </div>
-
-                <div>
-                  <Form.Select
-                    aria-label="Default select example"
-                    className="fondoSelect"
-                  >
-                    <option>Orden Direction</option>
-                    <option value="1">Common</option>
-                    <option value="2">Epic</option>
-                    <option value="3">Mytic</option>
-                  </Form.Select>
-                </div>
-                <div>
-                  <Form.Select
-                    aria-label="Default select example"
-                    className="fondoSelect"
-                  >
-                    <option>Sort By</option>
-                    <option value="1">Common</option>
-                    <option value="2">Epic</option>
-                    <option value="3">Mytic</option>
-                  </Form.Select>
-                </div>
-              </div>
             </div>
-          </div> */}
+            {/* cards */}
+            <div className="container__cards__blend">
+                        <Card />
+                        <Card />
+                        <Card />
+                        <Card />
+                        <Card />
+                        <Card />
+                        <Card />
+                        <Card />
+                        <Card />
+                        <Card />
+                        <Card />
+                        <Card />
+                        <Card />
+                        <Card />
+                        <Card />
+                        <Card />
+                        <Card />
+                        <Card />
+                        <Card />
+                        <Card />
+                        <Card />
+                        <Card />
+                        <Card />
+            </div>
+          </>
+        }
+        { eTabs.Table &&
+          <TableWallet/>
+        }
+         
+
 
        {/*    
        buttones
@@ -77,39 +132,15 @@ function Wallet() {
             </div>
           </div>  */}
 
-    {/*       <div className="container__cards__blend">
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-          </div> */}
-         {/*  <TableWallet/> */}
-         <WalletCard/>
-         <FormWallet/>
+         
+        
+         {/* <WalletCard/> */}
+         {/* <FormWallet/> */}
         </div>
 
         <div className="battle__buttons" style={{ marginTop: "140px" }}>
-          <button>Game items</button>
-          <button>Logs W</button>
+          <button onClick={()=>seteo("Cards")} style={eTabs.Cards ? btnStyles: {}}>Game items</button>
+          <button onClick={()=>seteo("Table")} style={eTabs.Table ? btnStyles: {}}>Logs W</button>
         </div>
       </div>
 
