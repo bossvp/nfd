@@ -66,7 +66,7 @@ function Layout() {
 
           <ul className="layout__options">
             <li>
-              <Link to="/" className="layout__options__link">
+              <Link to="/profile" className="layout__options__link">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"

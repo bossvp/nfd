@@ -19,6 +19,7 @@ import CoffeShop from './components/pages/CoffeShop';
 import Error from './components/pages/Error';
 import Stats from './components/pages/Stats';
 import CardGang from './components/gangs-components/CardGang';
+import Profile from './components/pages/Profile';
 
 
 
@@ -135,6 +136,20 @@ const router = createBrowserRouter([
     ],
         errorElement:<Error/>
   },
+  {
+    path: "/profile",
+    element: <Layout />,
+    children: [
+      {
+        index:true,// al visitar layout se muestra este elemento de manera directa
+        element:<Profile/>,
+
+      },
+     
+    ],
+        errorElement:<Error/>
+  },
+
   {
     path: "/stats",
     element: <Layout />,
