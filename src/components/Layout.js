@@ -56,7 +56,7 @@ function Layout() {
             </li>
             <li>
               <Link
-                to="/"
+                to="/assets"
                 className="container__menu__layout__list__link button"
               >
                 Assets

@@ -20,6 +20,7 @@ import Error from './components/pages/Error';
 import Stats from './components/pages/Stats';
 import CardGang from './components/gangs-components/CardGang';
 import Profile from './components/pages/Profile';
+import Assets from './components/pages/Assets';
 
 
 
@@ -143,6 +144,19 @@ const router = createBrowserRouter([
       {
         index:true,// al visitar layout se muestra este elemento de manera directa
         element:<Profile/>,
+
+      },
+     
+    ],
+        errorElement:<Error/>
+  },
+  {
+    path: "/assets",
+    element: <Layout />,
+    children: [
+      {
+        index:true,// al visitar layout se muestra este elemento de manera directa
+        element:<Assets/>,
 
       },
      
