@@ -12,6 +12,81 @@ html {
   font-family: "Rajdhani", sans-serif;
 }
 
+.PagePreloader{
+  height: 100vh;
+  width: 100vw;
+
+  background-color: #202020;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.PagePreloader{
+  height: 100vh;
+  width: 100vw;
+
+  background-color: #202020;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.PagePreloader .containerLoader{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: .5em;
+
+}
+
+.containerLoader img{
+  width: 25em;
+}
+
+.containerLoader p{
+  font-size: 1.8em;
+  color: #afa198;
+}
+.containerLoader .loader{
+  height: 1.5em;
+            width: 25em;
+            background-color: #C0BE8D;
+            position: relative;
+            border-radius: 1.5em;
+}
+
+.containerLoader .loader::before{
+  content: "";
+                border-radius: 1.5em;
+                position: absolute;
+                background: #8E8B41;
+                width: 0;
+                height: 1.5em;
+
+                animation: loader 10s infinite;
+}
+
+
+
+@keyframes loader {
+    
+  90% {
+      width: 100%;
+      opacity: 1;
+  }
+  100% {
+      width: 100%;
+      opacity: 0;
+  }
+}
+
+
+
+
+
+
 
 
 #cont{

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from './App';
@@ -25,16 +25,20 @@ import Assets from './components/pages/Assets';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  
+  
+  
+  [
   {
     path: "/",
     element: <Secret />,
-    children: [
-      {
-        index:true,// al visitar layout se muestra este elemento de manera directa
-        element:<Secret/>
-      },
-    ],
+    // children: [
+    //   {
+    //     index:true,// al visitar layout se muestra este elemento de manera directa
+    //     element:<Secret/>
+    //   },
+    // ],
     errorElement:<Error/>
   },
   {
