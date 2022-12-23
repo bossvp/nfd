@@ -10,6 +10,8 @@ import Planet from "../prod-components/Planet";
 import Territories from "../prod-components/Territories";
 import Neigh from "../prod-components/Neigh";
 import Shed from "../prod-components/Shed";
+import SelectCard from "../Modals/SelectCard";
+import Unlock from "../Modals/Unlock";
 
 function Prod() {
   const [active, setActive] = useState(false);
@@ -63,6 +65,9 @@ function Prod() {
     tittle: "Planet",
     subtitle: "Lorem ipsum dolor sit Amet.",
   });
+
+  const [eModalSelect,setModalSelect] =useState(false);
+  const [eModalUnlock,setModalUnlock] =useState(false)
 
   return (
     <div className="background__prod">
@@ -124,6 +129,7 @@ function Prod() {
                       style={{ width: "8em", height: "8em" }}
                     />
                     <button
+                      onClick={()=> setModalSelect(!eModalSelect)}
                       style={{ width: "10em" }}
                       className="btn btn-dark btn-lg btn-block position-absolute bottom-0 m-2 w-9em"
                     >
@@ -204,7 +210,7 @@ function Prod() {
 
               <div
                 className="col-12 col-md-5 "
-                style={{ border: "1px solid black" }}
+                
               >
                 {eElement.table && (
                   <table className="tabla_prod">
@@ -319,6 +325,7 @@ function Prod() {
                         style={{ marginTop: "1em" }}
                       >
                         <button
+                          onClick={()=> setModalSelect(!eModalSelect)}
                           className="btn"
                           style={{
                             background: "#FEF571",
@@ -331,6 +338,7 @@ function Prod() {
                           ADD CARD
                         </button>
                         <button
+                          onClick={()=> setModalUnlock(!eModalUnlock)}
                           className="btn"
                           style={{
                             background: "#FF6DAB",
@@ -386,6 +394,8 @@ function Prod() {
         </div>
       </div>
       {<Footer />}
+      <SelectCard state={eModalSelect} setstate={setModalSelect}/>
+      <Unlock  state={eModalUnlock} setstate={setModalUnlock}/>
     </div>
   );
 }
