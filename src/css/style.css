@@ -13,6 +13,8 @@ html {
 }
 
 
+
+
 .svg_statis{
   transition: .1s;
 }
@@ -1915,7 +1917,7 @@ header .icono_bar {
   background-color: rgb(46, 17, 19);
   border-radius: 3rem;
   padding: 2rem;
-  width: 78%;
+  width: 100%;
   margin: 0 auto;
 }
 .container__coffe-descripcion {
@@ -1930,8 +1932,8 @@ header .icono_bar {
 }
 .container__coffe-img {
   object-fit: cover;
-  height: 22rem;
-  width: 22rem;
+  
+  width: 20rem;
   margin: 0 auto;
   margin-top: -10rem;
 }
@@ -1974,7 +1976,7 @@ header .icono_bar {
   border: none;
   outline: none;
   background-color: rgb(209, 211, 210);
-  width: 15%;
+  width: 25%;
   color: black;
   font-weight: 700;
   padding: 0.3rem;

@@ -37,6 +37,7 @@ function Season() {
   return (
     <div className="background__season">
       <div className="container-fluid container__season">
+      
       <div className="container__title">
             <h3 className="container__title-title">{eText.tittle}</h3>
             <h2 className="container__title-subtitle">
