@@ -20,9 +20,8 @@ function Layout() {
               : "container__menu__layout"
           }`}
         >
-          <ul
-            className="container__menu__layout__list"
-            style={{ display: "none" }}
+          <ul className="container__menu__layout__list listAntiguo"
+            
           >
             <li>
               <Link

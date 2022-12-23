@@ -451,6 +451,10 @@ header .icono_bar {
   object-fit: cover;
 }
 
+.container__menu__layout .listAntiguo{
+  display: none;
+}
+
 .container__menu__layout {
   flex: 2;
   display: flex;
@@ -537,6 +541,15 @@ header .icono_bar {
 
 /* MENU RESPONSIVE */
 @media (max-width: 1060px) {
+  .menu-horizontal{
+    display: none;
+  }
+
+  .container__menu__layout .listAntiguo{
+    display: flex;
+  }
+
+
   .container__menu__layout {
     position: fixed;
     top: 0;
@@ -816,7 +829,7 @@ header .icono_bar {
   width: 2.8rem;
 }
 .card__prod__locked_slot p {
-  font-style: ;
+  
   margin: 0;
 }
 
