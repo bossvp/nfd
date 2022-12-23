@@ -3,6 +3,10 @@ import { Link, Outlet } from "react-router-dom";
 import Logo from "../img/logo.png";
 import icon from "../img/statisc.svg";
 
+import hat from "../img/hat.png"
+import level from "../img/level.png"
+import moustache from "../img/moustache.png"
+
 function Layout() {
   const [abrir, setAbrir] = useState(false);
 
@@ -190,9 +194,9 @@ function Layout() {
 
             <li>
               <Link
-                to="/"
-                className="layout__options__link"
-                onClick={() => alert("aca ira una ventan")}
+                to=""
+                className="layout__options__link svg_statis"
+                
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -205,6 +209,58 @@ function Layout() {
                   <path d="M0 0h24v24H0V0z" fill="none" />
                   <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm7.93 9H13V4.07c3.61.45 6.48 3.32 6.93 6.93zM4 12c0-4.07 3.06-7.44 7-7.93v15.86c-3.94-.49-7-3.86-7-7.93zm9 7.93V13h6.93A8.002 8.002 0 0 1 13 19.93z" />
                 </svg>
+
+                <div className="modal__statis" style={{ flexDirection:"column", justifyContent:"space-around"}}>
+                    <h1 style={{color:"white", fontWeight:"bold"}}>STATS</h1>
+                    
+                    <div style={{display:"flex", width:"100%", justifyContent:"space-around"}}>
+
+                      <div className="box__Statis">
+                        <div>
+                          <img src={hat} alt="" />
+                          <h4>RESPECT</h4>
+                        </div>
+                        <p>170  <span>RECEIVED</span>  </p>
+                      </div>
+
+                      <div className="box__Statis">
+                        <div>
+                          <img src={level} alt="" />
+                          <h4>LEVEL</h4>
+                        </div>
+                        <p>20 <span>280/2,500 XP</span>  </p>
+                      </div>
+                    </div>
+
+                    <div style={{display:"flex", width:"100%", justifyContent:"space-around"}}>
+                      <div className="box__Statis">
+                          <div>
+                            <img src={moustache} alt="" />
+                            <h4>$PB0</h4>
+                          </div>
+                          <p>6,550  <span>EARNED</span>  </p>
+                      </div>
+                      <div className="box__Statis">
+                          <div>
+                            
+                            <h4>SEASON POINTS</h4>
+                          </div>
+                          <p>340,222  <span>IMPSUN</span>  </p>
+
+                      </div>
+                    </div>
+
+                    <div style={{display:"flex", width:"100%", justifyContent:"space-around"}}>
+                      <div className="box__Statis">
+                          <div>
+                            
+                            <h4>OTHER STAT</h4>
+                          </div>
+                          <p>000  <span>L IMPSUN</span>  </p>
+                      </div>
+                      
+                    </div>
+                </div>
               </Link>
             </li>
 
