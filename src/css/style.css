@@ -26,42 +26,46 @@ html {
 
   padding: 1em;
 
-  background-color: rgba(0,0, 0, 0.94);
+  background-color: rgba(30, 29, 29, 0.94);
   position: absolute;
   margin-top: 1em;
-  height: 70vh;
-  width: 23vw;
+  height: 60vh;
+  width: 33rem;
   transition:  .5s;
 }
 
 
 
 .box__Statis{
-  border: .5px solid #191919;
+  border: .2rem solid #191919;
   border-radius: 1em;
-  width: 10rem;
-  height: 9rem;
+  width: 15rem;
+  height: 10rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 .box__Statis img{
+ 
   width: 3rem;
-  border-right: .5px solid #191919;
+  border-right: .3rem solid #191919;
+  
 }
 .box__Statis div{
+  border-bottom: .3rem solid #191919;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  border-bottom: .5px solid #191919;
+
 }
 .box__Statis div h4{
   text-align: center;
   margin: 0;
 }
 .box__Statis  p{
+
   display: flex;
   flex-direction: column;
   justify-content: center;
