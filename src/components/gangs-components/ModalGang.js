@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
+import { Link } from "react-router-dom";
 
 function ModalGang( {state, setState, text} ) {
   const [show, setShow] = useState(true);
@@ -59,9 +60,11 @@ function ModalGang( {state, setState, text} ) {
                     <button>
                         Cancel
                     </button>
-                    <button>
-                    {text.name}
-                    </button>
+                    <Link to={text.link}>
+                      <button>
+                      {text.name}
+                      </button>
+                    </Link>
                 </div>
             </div>
             </div>

@@ -2,7 +2,7 @@ import React from 'react'
 import s from './stylesModals.module.scss'
 
 
-import img from '../../img/season/bike.png'
+import img from '../../img/briefcase-1.png'
 
 function SelectCard( {state, setstate} ) {
     const selectorCards = (e) =>{

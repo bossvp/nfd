@@ -588,14 +588,14 @@ header .icono_bar {
 	text-decoration: none;
   
 }
-.menu-horizontal li{
-  
+.menu-horizontal li a{
+  margin: 0 0.5em 0.3em 0.5em;
 }
 .menu-vertical{
 	position: absolute;
-	display: none;
-	margin: 0;
   padding: 0;
+	display: none;
+	
 	/* background-color: rgba(0, 0, 0, .5); */
 }
 .menu-horizontal li:hover .menu-vertical{
@@ -614,7 +614,8 @@ header .icono_bar {
 	display: block;
 	color: white;
 	text-decoration: none;
-	margin-left: 0rem;
+	margin: 0 0.5em 0;
+  width: 9.17em;
 }
 
 
@@ -1187,7 +1188,7 @@ header .icono_bar {
 }
 
 .personaje__img {
-  width: 25rem;
+  width: 20rem;
   margin: 0 auto;
   /*  margin-right: 2rem; */
 }
@@ -1225,17 +1226,46 @@ header .icono_bar {
 
 .season__images {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 220px));
   gap: 1rem;
   justify-items: center;
   max-height: 450px;
   height: 450px;
   overflow-y: scroll;
+  
+
+}
+
+
+.season__images div {
+  background: #000;
+  width: 100%;
+  height: 322.66px;
+  position: relative;
+  
 }
 .season__images img {
-  height: 420px;
-  max-height: 420px;
+  /* height: 420px;
+  max-height: 420px; */
+  width: 100%;
   object-fit: cover;
+  
+}
+.season__images p {
+  pointer-events: none;
+  position: absolute;
+  bottom: 0;
+  background: #000;
+  margin-bottom: 0;
+  width: 100%;
+  font-weight: 900;
+  font-size: 2em;
+  height: 3em;
+
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .season__images img:hover {
   border: 4px solid rgb(255, 255, 255);

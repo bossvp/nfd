@@ -31,6 +31,21 @@ function Shed({seteoWindow, setText, btnInfo, eText}) {
 
 }
 
+const cards =[];
+const img = [Associate,Untouchable,Lieutenant,Baron];
+
+let j=0;
+for (let i = 1; i < 101; i++) {
+  i=== 0 ? j=0 : i%4 === 0 ? j=0 : j++; 
+  cards.push(
+    <div>
+      <img src={img[j]} alt="" />
+      { i<10 ? <p>#00{i}</p> : <p>#0{i}</p>}
+    </div>
+  )
+  
+}
+
   return (
     <>
     
@@ -76,7 +91,7 @@ function Shed({seteoWindow, setText, btnInfo, eText}) {
                 </div>
     </div>
         <div className="season__images" onClick={selectorCards}>
-          <img src={Associate} alt="" />
+          {/* <img src={Associate} alt="" />
           <img src={Untouchable} alt="" />
           <img src={Lieutenant} alt="" />
           <img src={Baron} alt="" />
@@ -103,7 +118,8 @@ function Shed({seteoWindow, setText, btnInfo, eText}) {
           <img src={Associate} alt="" />
           <img src={Untouchable} alt="" />
           <img src={Lieutenant} alt="" />
-          <img src={Baron} alt="" />
+          <img src={Baron} alt="" /> */}
+          {cards}
         </div>
         
       </div>

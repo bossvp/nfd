@@ -53,7 +53,7 @@ function Layout() {
             </li>
             <li>
               <Link
-                to="/deal"
+                to=""
                 className="container__menu__layout__list__link button"
               >
                 Season
@@ -100,7 +100,7 @@ function Layout() {
                 </li>
                 <li>
                   <Link
-                    to="/deal"
+                    to="/season"
                     className="container__menu__layout__list__link button"
                   >
                     DEAL
@@ -128,7 +128,7 @@ function Layout() {
             {/* assets */}
             <li>
               <Link
-                to="/assets"
+                to=""
                 className="container__menu__layout__list__link button"
               >
                 Assets

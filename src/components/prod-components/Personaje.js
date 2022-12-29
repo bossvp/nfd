@@ -10,13 +10,14 @@ function Personaje() {
               Selected item  
               <span className=' h4 ms-4 text-uppercase text-white fw-bold'>character</span>
             </p>
-            <button className='btn p-0' style={{background:"#FC653D", color:'white', width:'6em', fontSize:'.5em', fontWeight:"bold" }}>CHANGE</button>
+            <button className='btn p-0' style={{background:"#FC653D", color:'white', width:'6em', fontSize:'.9em', fontWeight:"bold" }}>CHANGE</button>
             </div>
             
            
             <div className="col-12 col-md-6">
 
             <img src={Shark} alt="" className='personaje__img'/>
+            <p style={{textAlign: "center", fontWeight:"bold"}}>Expires on: 30 December <br /> 2022 at 18:24:13</p>
             </div>
             <div className="col-12 col-md-6">
             <h2 className='fw-bold text-uppercase text-white ps-3 mb-2' style={{marginTop:"35px"}}>Hugo 'shark' cruz</h2>
@@ -82,7 +83,7 @@ function Personaje() {
 
                 
             </div>
-            <p style={{textAlign: "center", fontWeight:"bold"}}>Expires on: 30 December <br /> 2022 at 18:24:13</p>
+            
         </div>
     </div>
   )

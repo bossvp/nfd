@@ -14,7 +14,7 @@ function Unlock( {state, setstate} ) {
 
                 <div className={s.boxModalUnlock}>
                     <h1 className={s.btnExit} onClick={()=> setstate(false)}>x</h1>
-                    <h1 className={s.tittle}>CONFIRM UNLOCK SLOT</h1>
+                    <h1 className={s.tittle}>CONFIRM UPGRADE SLOT</h1>
 
                     <p>Lorem ipsum dolor sit amet?.</p>
                     <p>Morbi facilisis felis turpis, vitae accumsan elit egestas eget.

@@ -33,8 +33,14 @@ function Territories({seteoWindow, setText,eText, btnInfo}) {
     <>
       <div className="col-12 col-md-9 ">
         <div className="season__images " onClick={selectorCards}>
-          <img src={Associate} alt="" />
-          <img src={Untouchable} alt="" />
+          <div>
+            <img src={Associate} alt=""  />
+            <p>WEED</p>
+          </div>
+          <div>
+            <img src={Untouchable} alt="" />
+            <p>hash</p>
+          </div>
           
         </div>
         {/* <div className="row">

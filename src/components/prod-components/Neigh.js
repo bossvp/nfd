@@ -34,9 +34,18 @@ function Neigh({seteoWindow, setText, btnInfo, eText}) {
     <>
       <div className="col-12 col-md-9 ">
         <div className="season__images" onClick={selectorCards}>
-          <img src={Associate} alt="" />
-          <img src={Untouchable} alt="" />
-          <img src={Lieutenant} alt="" />
+          <div>
+            <img src={Associate} alt="" />
+            <p>sativa</p>
+          </div>
+          <div>
+            <img src={Untouchable} alt="" />
+            <p>indica</p>
+          </div>
+          <div>
+            <img src={Lieutenant} alt="" />
+            <p>hybrid</p>
+          </div>
           
         </div>
         {/* <div className="row">

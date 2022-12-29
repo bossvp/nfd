@@ -77,7 +77,9 @@ function Prod() {
             <p className="h1 text-uppercase text-white fw-bold" style={{textAlign:"start", fontSize:"5rem"}}>
               {eText.tittle}
               
+              
             </p>
+            
             <span className=" h4 text-uppercase text-white fw-bold" style={{textAlign:"start", marginLeft:0}}>
             {eText.subtitle}
               </span>
@@ -87,7 +89,7 @@ function Prod() {
           {eWindow.Territories && <Territories seteoWindow={seteoWindow} setText={setText} eText={eText} btnInfo={{tittle: "NeighBouroods", subtitle:"Lorem ipsum dolor sit Amet.", set:"Neigh"}}/>}
           {eWindow.Neigh && <Neigh seteoWindow={seteoWindow} setText={setText} eText={eText} btnInfo={{tittle: "Shed", subtitle:"Lorem ipsum dolor sit Amet.", set:"Shed"}}/>}
 
-          {eWindow.Shed && <Shed seteoWindow={seteoWindow} setText={setText} eText={eText} btnInfo={{tittle: "Produce NFD", subtitle:"", set:"Produce"}}/>}
+          {eWindow.Shed && <Shed seteoWindow={seteoWindow} setText={setText} eText={eText} btnInfo={{tittle: "Produce NFD", subtitle:"PHEEBO | WEED | SATIVA | #1257", set:"Produce"}}/>}
           {eWindow.Produce && 
             <>
               <div className="col-12 col-md-7">
@@ -164,15 +166,15 @@ function Prod() {
                     <span></span>
                   </div>
 
-                  <div className="card__prod__locked_slot">
+                  <div className="card__prod__locked_slot" onClick={()=> setModalUnlock(!eModalUnlock)}>
                     <p className="fw-bold pt-2">LOCKED SLOT</p>
                     <img src={PadLock} alt="" />
                   </div>
-                  <div className="card__prod__locked_slot">
+                  <div className="card__prod__locked_slot" onClick={()=> setModalUnlock(!eModalUnlock)}>
                     <p className="fw-bold pt-2">LOCKED SLOT</p>
                     <img src={PadLock} alt="" />
                   </div>
-                  <div className="card__prod__locked_slot">
+                  <div className="card__prod__locked_slot" onClick={()=> setModalUnlock(!eModalUnlock)}>
                     <p className="fw-bold pt-2">LOCKED SLOT</p>
                     <img src={PadLock} alt="" />
                   </div>
@@ -332,7 +334,7 @@ function Prod() {
                             color: "#564709",
                             fontWeight: "900",
                             width: "10em",
-                            fontSize: "1.4em",
+                            fontSize: "1.8em",
                           }}
                         >
                           ADD CARD
@@ -345,7 +347,7 @@ function Prod() {
                             color: "#564709",
                             fontWeight: "900",
                             width: "10em",
-                            fontSize: "1.4em",
+                            fontSize: "1.8em",
                           }}
                         >
                           UPGRADE SLOT
@@ -384,9 +386,7 @@ function Prod() {
                       </tr>
                     </table>
                   </div>
-                  <p style={{ textAlign: "center", fontWeight: "" }}>
-                    PHEEBO | WEED | SATIVA | #1257
-                  </p>
+                  
                 </div>
               </div>
             </>

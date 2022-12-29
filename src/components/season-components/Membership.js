@@ -39,14 +39,11 @@ function Membership({btn,setText}) {
                  
                  
                  
-                 <select name="cars" id="cars" 
+                 <button  
                  style={{color:"white", fontWeight:"bold", background:"black",padding:"1.2rem", width:"14rem", height:"4rem", fontSize:"1.4rem", border:"none", borderRadius:"2rem", outline:"none", marginTop:"1.5rem"}}
                  >
-                     <option >OPTION 1</option>
-                     <option >OPTION 2</option>
-                     <option >OPTION 3</option>
-                     <option >OPTION 4</option>
-                 </select>
+                     OPTION 1
+                 </button>
         
                  <div className="center d-flex flex-column justify-content-center align-items-center" style={{marginTop:"1.5rem"}}>
                      <p

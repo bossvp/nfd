@@ -28,12 +28,16 @@ function Planet({ seteoWindow, setText, eText, btnInfo }) {
   return (
     <>
       <div className="col-12 col-md-9 ">
+
         <div
           className="season__images"
           style={{ justifyItems: "start" }}
           onClick={selectorCards}
         >
-          <img src={Associate} alt="" />
+          <div>
+            <img src={Associate} alt="" />
+            <p>PHEEBO</p>
+          </div>
         </div>
         
         

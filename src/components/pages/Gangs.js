@@ -44,7 +44,8 @@ function Gangs() {
             {
               name: "Join",
               info: "To join a clan you need a gang membership",
-              details: "No membership NFT yet"
+              details: "No membership NFT yet",
+              link: "/Gangs/rank"
             }
           }/> 
         }
