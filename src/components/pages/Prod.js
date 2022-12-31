@@ -84,8 +84,8 @@ function Prod() {
         <div className="row container__prod">
           <div className="h1 text-uppercase text-white fw-bold d-flex justify-content-center flex-column align-items-start">
             <p className="h1 text-uppercase text-white fw-bold" style={{textAlign:"start", fontSize:"5rem"}}>
-              {eText.tittle}
-              <span className=" h4 text-uppercase text-white fw-bold" style={{fontSize:".4em", marginLeft:".6em"}}> PHEEBO | WEED | SATIVA | #1257</span>
+              {eText.tittle} 
+              <span className=" h3 text-uppercase text-white fw-bold" style={{marginLeft:".8em"}}>{eWindow.Produce ?  "PHEEBO | WEED | SATIVA | #1257" : ""}</span>
               
             </p>
             
@@ -96,7 +96,7 @@ function Prod() {
           {eWindow.Territories && <Territories seteoWindow={seteoWindow} setText={setText} eText={eText} btnInfo={{tittle: "NeighBouroods", subtitle:"Lorem ipsum dolor sit Amet.", set:"Neigh"}}/>}
           {eWindow.Neigh && <Neigh seteoWindow={seteoWindow} setText={setText} eText={eText} btnInfo={{tittle: "Shed", subtitle:"Lorem ipsum dolor sit Amet.", set:"Shed"}}/>}
 
-          {eWindow.Shed && <Shed seteoWindow={seteoWindow} setText={setText} eText={eText} btnInfo={{tittle: "Produce NFD", subtitle:"PHEEBO | WEED | SATIVA | #1257", set:"Produce"}}/>}
+          {eWindow.Shed && <Shed seteoWindow={seteoWindow} setText={setText} eText={eText} btnInfo={{tittle: "PRODUCE NFD", subtitle:"", set:"Produce"}}/>}
           {eWindow.Produce && 
             <>
               <div className="col-12 col-md-7">
