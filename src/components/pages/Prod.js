@@ -13,6 +13,9 @@ import Shed from "../prod-components/Shed";
 import SelectCard from "../Modals/SelectCard";
 import Unlock from "../Modals/Unlock";
 
+import briefcase from '../../img/briefcase-1.png'
+
+
 function Prod() {
   const [active, setActive] = useState(false);
   const activarCard = () => {
@@ -66,7 +69,13 @@ function Prod() {
     subtitle: "Lorem ipsum dolor sit Amet.",
   });
 
-  const [eModalSelect,setModalSelect] =useState(false);
+
+  const [eModalSelect,setModalSelect] =useState({
+    active:false,
+    img: Shark,
+    tittle: "Card",
+  });
+
   const [eModalUnlock,setModalUnlock] =useState(false)
 
   return (
@@ -76,13 +85,11 @@ function Prod() {
           <div className="h1 text-uppercase text-white fw-bold d-flex justify-content-center flex-column align-items-start">
             <p className="h1 text-uppercase text-white fw-bold" style={{textAlign:"start", fontSize:"5rem"}}>
               {eText.tittle}
-              <span style={{fontSize:".8em"}}>PHEEBO | WEED | SATIVA | #1257</span>
+              <span className=" h4 text-uppercase text-white fw-bold" style={{fontSize:".4em", marginLeft:".6em"}}> PHEEBO | WEED | SATIVA | #1257</span>
               
             </p>
             
-            <span className=" h4 text-uppercase text-white fw-bold" style={{textAlign:"start", marginLeft:0}}>
-            {eText.subtitle}
-              </span>
+           
           </div>
 
           {eWindow.Planet && <Planet seteoWindow={seteoWindow} setText={setText} eText={eText} btnInfo={{tittle: "Territories", subtitle:"Lorem ipsum dolor sit Amet.", set:"Territories"}}/>}
@@ -131,7 +138,7 @@ function Prod() {
                       style={{ width: "8em", height: "8em" }}
                     />
                     <button
-                      onClick={()=> setModalSelect(!eModalSelect)}
+                      onClick={()=> setModalSelect({ ...eModalSelect, active: true, tittle: "BAG", img:briefcase })}
                       style={{ width: "10em" }}
                       className="btn btn-dark btn-lg btn-block position-absolute bottom-0 m-2 w-9em"
                     >
@@ -327,7 +334,7 @@ function Prod() {
                         style={{ marginTop: "1em" }}
                       >
                         <button
-                          onClick={()=> setModalSelect(!eModalSelect)}
+                          onClick={()=> setModalSelect({ ...eModalSelect, active: true, tittle: "CARD", img:Phi })}
                           className="btn"
                           style={{
                             background: "#FEF571",

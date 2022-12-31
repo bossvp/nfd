@@ -2,7 +2,7 @@ import React from 'react'
 import s from './stylesModals.module.scss'
 
 
-import img from '../../img/briefcase-1.png'
+
 
 function SelectCard( {state, setstate} ) {
     const selectorCards = (e) =>{
@@ -15,9 +15,9 @@ function SelectCard( {state, setstate} ) {
     for (let i = 0; i < 21; i++) {
         card.push(
             <div className={s.card } key={i} onClick={selectorCards}>
-                <img src={img} alt="" />
+                <img src={state.img} alt="" />
 
-                <p style={{fontWeight:"bold", margin:".8em 0 1.3em"}}>
+                <p style={{fontWeight:"bold", margin:".8em 0 1.3em", pointerEvents:"none"}}>
                     BIKE (001)
                 </p>
             </div>
@@ -27,7 +27,7 @@ function SelectCard( {state, setstate} ) {
   
   return (
     <>
-        {state &&
+        {state.active &&
             <div className={s.containerModalAddCard}>
 
                 <div className={s.boxModalAddCard}>
@@ -36,7 +36,7 @@ function SelectCard( {state, setstate} ) {
                     onClick={()=> setstate(false)}
                     
                     >x</h1>
-                    <h1 style={{fontWeight:"bold"}}>SELECT CARD</h1>
+                    <h1 style={{fontWeight:"bold"}}>SELECT {state.tittle}</h1>
 
                     
 
