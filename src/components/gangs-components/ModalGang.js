@@ -57,7 +57,7 @@ function ModalGang( {state, setState, text} ) {
             <div className="body_modal__footer-buttons">
                 <div className="modal__footer-img"></div>
                 <div className="modal__footer-buttons">
-                    <button>
+                    <button onClick={()=>handleClose()}>
                         Cancel
                     </button>
                     <Link to={text.link}>
