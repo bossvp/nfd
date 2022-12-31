@@ -76,7 +76,7 @@ function Prod() {
           <div className="h1 text-uppercase text-white fw-bold d-flex justify-content-center flex-column align-items-start">
             <p className="h1 text-uppercase text-white fw-bold" style={{textAlign:"start", fontSize:"5rem"}}>
               {eText.tittle}
-              
+              <span style={{fontSize:".8em"}}>PHEEBO | WEED | SATIVA | #1257</span>
               
             </p>
             

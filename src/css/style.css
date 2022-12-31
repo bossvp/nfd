@@ -110,10 +110,15 @@ html {
 }
 
 .PagePreloader .containerLoader {
+  position: relative;
+
+
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
+  height: 30em;
   gap: 0.5em;
 }
 
@@ -121,12 +126,25 @@ html {
   width: 25em;
 }
 
-.containerLoader p {
+.containerLoader .box_loader p {
+
   font-size: 1.8em;
+  font-weight: 900;
   color: #afa198;
 }
+
+.containerLoader .box_loader {
+  position: absolute;
+  bottom: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 .containerLoader .loader {
-  height: 1.5em;
+  
+  height: 2.5em;
   width: 25em;
   background-color: #c0be8d;
   position: relative;
@@ -139,7 +157,7 @@ html {
   position: absolute;
   background: #8e8b41;
   width: 0;
-  height: 1.5em;
+  height: 2.5em;
 
   animation: loader 10s infinite;
 }
@@ -1225,8 +1243,9 @@ header .icono_bar {
 }
 
 .season__images {
+  cursor: pointer;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 220px));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 308px));
   gap: 1rem;
   justify-items: center;
   max-height: 450px;
@@ -1240,7 +1259,6 @@ header .icono_bar {
 .season__images div {
   background: #000;
   width: 100%;
-  height: 322.66px;
   position: relative;
   
 }
@@ -1249,7 +1267,7 @@ header .icono_bar {
   max-height: 420px; */
   width: 100%;
   object-fit: cover;
-  
+  pointer-events: none;
 }
 .season__images p {
   pointer-events: none;
@@ -1267,8 +1285,10 @@ header .icono_bar {
   justify-content: center;
   align-items: center;
 }
-.season__images img:hover {
+.season__images div:hover {
   border: 4px solid rgb(255, 255, 255);
+
+
 }
 .season__images .card__state__select {
   border: 4px solid rgb(228, 2, 2);

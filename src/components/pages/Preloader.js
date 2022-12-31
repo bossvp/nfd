@@ -7,10 +7,12 @@ function Preloader() {
         <div className="containerLoader">
             <img src={moustache}/>
             
-            <div className="loader">
-                
+            <div className='box_loader'>
+              <div className="loader">
+                  
+              </div>
+              <p>LOADING ...</p>
             </div>
-            <p>LOADING ...</p>
         </div>
     </div>
   )

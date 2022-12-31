@@ -2,6 +2,7 @@ import React from "react";
 import User from "../../img/gangs/user.png";
 import Brow from "../../img/gangs/mt_brow.png";
 import Footer from "../Footer";
+import { Link } from "react-router-dom";
 function CardGang() {
   const boxUserOne = [];
   const boxUserTwo = [];
@@ -282,7 +283,10 @@ function CardGang() {
                 </div>
               </div>
             </div>
-        <button> Leave</button>
+            <Link to="/Gangs" >
+               <button>  Leave</button>
+            </Link>
+       
         </div>
      
 

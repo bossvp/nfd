@@ -30,10 +30,18 @@ function ImagesGroup({btnStart}) {
   return (
     <div className="col-12 col-md-8 ">
       <div className="season__images" onClick={selectorCards}>
-        <img src={Associate} alt="" />
-        <img src={Untouchable} alt="" />
-        <img src={Lieutenant} alt="" />
-        <img src={Baron} alt="" />
+        <div>
+          <img src={Associate} alt="" />
+        </div>
+        <div>
+          <img src={Untouchable} alt="" />
+        </div>
+        <div>
+          <img src={Lieutenant} alt="" />
+        </div>
+        <div>
+          <img src={Baron} alt="" />
+        </div>
       </div>
       <div className="row">
         <div className="col-12 confirm-mision">

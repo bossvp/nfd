@@ -265,7 +265,7 @@ function Layout() {
             </li>
 
             <li>
-              <Link to="/Battle" className="layout__options__link">
+              <Link to="" className="layout__options__link">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -279,7 +279,7 @@ function Layout() {
               </Link>
             </li>
             <li>
-              <Link to="/Gangs/rank" className="layout__options__link">
+              <Link to="" className="layout__options__link">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"

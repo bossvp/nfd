@@ -7,7 +7,9 @@ import Information from "./Information";
 
 function Planet({ seteoWindow, setText, eText, btnInfo }) {
   const [eSelect, setSelect] = useState(false);
+  
   const selectorCards = (e) => {
+    console.log(e)
     if (e.target.className) {
       e.target.classList.toggle("card__state__select");
       setSelect(!eSelect);
@@ -34,7 +36,7 @@ function Planet({ seteoWindow, setText, eText, btnInfo }) {
           style={{ justifyItems: "start" }}
           onClick={selectorCards}
         >
-          <div>
+          <div >
             <img src={Associate} alt="" />
             <p>PHEEBO</p>
           </div>
