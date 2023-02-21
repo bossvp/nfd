@@ -422,7 +422,8 @@ h4 {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
   width: 100%;
   position: relative;
 }
@@ -768,7 +769,7 @@ header .icono_bar {
 }
 
 .container__prod {
-  height: 95vh;
+  height: 100vh;
   padding-top: 9rem;
   padding-left: 4.5rem;
   padding-right: 4.5rem;
