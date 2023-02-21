@@ -54,7 +54,7 @@ function Battle() {
             <button onClick={()=>setTab(false)} style={!eTab ? bg : {}}>Macth</button>
         </div>
       </div>
-      <Footer/>
+      {/* <Footer/> */}
     </div>
   )
 }

@@ -47,7 +47,7 @@ function Stats() {
         </div>
       </div>
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

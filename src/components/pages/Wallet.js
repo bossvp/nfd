@@ -144,7 +144,7 @@ function Wallet() {
         </div>
       </div>
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

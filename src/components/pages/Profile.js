@@ -31,7 +31,7 @@ function Profile() {
         
       </div>
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }

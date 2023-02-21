@@ -400,7 +400,7 @@ function Prod() {
           }
         </div>
       </div>
-      {<Footer />}
+      {/* {<Footer />} */}
       <SelectCard state={eModalSelect} setstate={setModalSelect}/>
       <Unlock  state={eModalUnlock} setstate={setModalUnlock}/>
     </div>

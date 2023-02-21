@@ -52,7 +52,7 @@ function Gangs() {
          
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

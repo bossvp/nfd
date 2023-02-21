@@ -30,7 +30,7 @@ function CoffeShop() {
         </div>
 
         </div>
-        <Footer/>
+        {/* <Footer/> */}
     </div>
   )
 }

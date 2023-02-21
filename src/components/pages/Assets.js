@@ -108,7 +108,7 @@ function Assets() {
 
       </div>
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }
