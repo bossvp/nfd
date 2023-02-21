@@ -13,6 +13,51 @@ html {
 }
 
 
+/* cards-modals */
+.modal__cards{
+  background-color: blue;
+  height: 80%;
+  width: 100%;
+  padding: 0.4em 0;
+
+  overflow: hidden;
+  overflow-y: scroll;
+
+  display: grid;
+  grid-auto-rows: auto;
+  grid-template-columns: repeat(2, minmax(20em, 1fr ));
+  gap: 1em;
+}
+.modal__cards .select{
+  border: 3px solid white;
+}
+.modal__card{
+  cursor: pointer;
+  background-color: #2A2927;
+  position: relative;
+  padding: 1em;
+  
+  flex-direction: column;
+  width: 100%;
+  
+
+
+ 
+}
+.modal__card img{
+      width: 100%;
+      pointer-events: none;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 .svg_statis{

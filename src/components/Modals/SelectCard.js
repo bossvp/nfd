@@ -6,11 +6,9 @@ import s from './stylesModals.module.scss'
 
 function SelectCard( {state, setstate} ) {
     const selectorCards = (e) =>{
-       
         e.target.classList.toggle(s["select"]);
-
-
     }
+    
     const card = [];
     for (let i = 0; i < 21; i++) {
         card.push(

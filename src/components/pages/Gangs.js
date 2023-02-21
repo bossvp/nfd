@@ -3,7 +3,7 @@ import Footer from "../Footer";
 import CardGang from "../gangs-components/CardGang";
 import MakeAndJoin from "../gangs-components/MakeAndJoin";
 import ModalGang from "../gangs-components/ModalGang";
-
+import DemoModal from "../Modals/DemoModal"
 
 function Gangs() {
   const [emodal, setModal] = useState({
@@ -39,6 +39,18 @@ function Gangs() {
           }/> 
         }
 
+        {/* borrar */}
+              <DemoModal state={emodal} setState={setModal} text={
+                  {
+                    name: "Join",
+                    info: "To join a clan you need a gang membership",
+                    details: "No membership NFT yet",
+                    link: "/Gangs/rank"
+                  }
+                }/>
+        {/* borrar */}
+
+        
         {emodal.Join &&
           <ModalGang state={emodal} setState={setModal} text={
             {

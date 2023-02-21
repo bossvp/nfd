@@ -16,6 +16,8 @@ import Unlock from "../Modals/Unlock";
 import briefcase from '../../img/briefcase-1.png'
 
 
+import DemoModal from "../Modals/DemoModal"
+
 function Prod() {
   const [active, setActive] = useState(false);
   const activarCard = () => {
@@ -138,12 +140,14 @@ function Prod() {
                       style={{ width: "8em", height: "8em" }}
                     />
                     <button
+                      
                       onClick={()=> setModalSelect({ ...eModalSelect, active: true, tittle: "BAG", img:briefcase })}
                       style={{ width: "10em" }}
                       className="btn btn-dark btn-lg btn-block position-absolute bottom-0 m-2 w-9em"
                     >
                       SELECT BAG
                     </button>
+                    <DemoModal state={eModalSelect} setstate={setModalSelect}/>
                   </div>
                   <div className="card__prod">
                     <img src={Satin} alt="" />
@@ -405,6 +409,7 @@ function Prod() {
         </div>
       </div>
       {/* {<Footer />} */}
+      
       <SelectCard state={eModalSelect} setstate={setModalSelect}/>
       <Unlock  state={eModalUnlock} setstate={setModalUnlock}/>
     </div>
