@@ -50,6 +50,7 @@ function MissionCards() {
                 className="table__layout__blend"
                 style={{ fontWeight: "700" ,marginTop:"120px"}}
               >
+                <tbody>
                 <tr>
                   <td>loan</td>
                   <td>|</td>
@@ -75,6 +76,7 @@ function MissionCards() {
                   <td>|</td>
                   <td>-1200</td>
                 </tr>
+                </tbody>
               </table>
     </div>
   )

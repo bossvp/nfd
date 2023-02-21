@@ -190,6 +190,7 @@ function Prod() {
                 <div className="row mt-5">
                   <div className="col-12">
                     <table className="table__layout">
+                      <tbody>
                       <tr>
                         <td>bullets</td>
                         <td>|</td>
@@ -210,6 +211,7 @@ function Prod() {
                         <td>|</td>
                         <td>Baron 10.00/15.00 respect</td>
                       </tr>
+                      </tbody>
                     </table>
 
                     <div className="progress-bar__simple"></div>
@@ -233,8 +235,8 @@ function Prod() {
                     </thead>
                     <tbody>
                       <tr>
-                        <td rowspan="3">5-Printer</td>
-                        <td rowspan="3">8000</td>
+                        <td rowSpan="3">5-Printer</td>
+                        <td rowSpan="3">8000</td>
                         <td>Common</td>
                         <td>35</td>
                       </tr>
@@ -248,8 +250,8 @@ function Prod() {
                       </tr>
 
                       <tr>
-                        <td rowspan="3">6-Bag</td>
-                        <td rowspan="3">1300</td>
+                        <td rowSpan="3">6-Bag</td>
+                        <td rowSpan="3">1300</td>
                         <td>Common</td>
                         <td>29</td>
                       </tr>
@@ -263,8 +265,8 @@ function Prod() {
                       </tr>
 
                       <tr>
-                        <td rowspan="3">7-Henchman</td>
-                        <td rowspan="3">21000</td>
+                        <td rowSpan="3">7-Henchman</td>
+                        <td rowSpan="3">21000</td>
                         <td>Common</td>
                         <td>48</td>
                       </tr>
@@ -278,8 +280,8 @@ function Prod() {
                       </tr>
 
                       <tr>
-                        <td rowspan="3">8-Bag</td>
-                        <td rowspan="3">34000</td>
+                        <td rowSpan="3">8-Bag</td>
+                        <td rowSpan="3">34000</td>
                         <td>Common</td>
                         <td>40</td>
                       </tr>
@@ -293,8 +295,8 @@ function Prod() {
                       </tr>
 
                       <tr>
-                        <td rowspan="3">9-Printer</td>
-                        <td rowspan="3">55000</td>
+                        <td rowSpan="3">9-Printer</td>
+                        <td rowSpan="3">55000</td>
                       </tr>
 
                       <tr>
@@ -381,6 +383,7 @@ function Prod() {
 
                   <div className="d-flex justify-content-center mt-3">
                     <table className="table__layout">
+                      <tbody>
                       <tr>
                         <td>pure crystalline</td>
                         <td>|</td>
@@ -391,6 +394,7 @@ function Prod() {
                         <td>|</td>
                         <td>0 MD</td>
                       </tr>
+                      </tbody>
                     </table>
                   </div>
                   

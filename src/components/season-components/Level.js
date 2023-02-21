@@ -14,7 +14,7 @@ function Level({btn, setText}) {
       setSelect(!eSelect)
     } else{
       const nodos = e.currentTarget.childNodes;
-      console.log(nodos.length)
+      
       let contador = 0
       for (let i = 0; i < nodos.length; i++) {
         if(nodos[i].className){
@@ -83,6 +83,7 @@ function Level({btn, setText}) {
         </h2>
 
         <table className="table__layout mb-4" style={{ margin: "0 auto" }}>
+          <tbody>
           <tr>
             <td>Mission</td>
             <td>|</td>
@@ -108,6 +109,7 @@ function Level({btn, setText}) {
             <td>|</td>
             <td>13200 epheebo</td>
           </tr>
+          </tbody>
         </table>
 
         <h3 className="text-uppercase text-white fw-bold text-center p-0 m-0">
@@ -132,6 +134,7 @@ function Level({btn, setText}) {
         </p>
 
         <table className="table__layout mb-4" style={{ margin: "0 auto" }}>
+          <tbody>
           <tr>
             <td>respect needed</td>
             <td>|</td>
@@ -147,6 +150,7 @@ function Level({btn, setText}) {
             <td>|</td>
             <td>4 days</td>
           </tr>
+          </tbody>
         </table>
       </div>
     </>

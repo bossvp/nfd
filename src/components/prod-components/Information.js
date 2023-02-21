@@ -42,6 +42,7 @@ function Information({eSelect,seteoWindow,setText, eText, color = "#B06A26", btn
         </p>
 
         <table className="table__layout mb-4" style={{  }}>
+        <tbody>
         <tr>
             <td>neutral bonus</td>
             <td>|</td>
@@ -62,6 +63,7 @@ function Information({eSelect,seteoWindow,setText, eText, color = "#B06A26", btn
             <td>|</td>
             <td>10%</td>
           </tr>
+        </tbody>
         </table>
 
         <div className="row" style={{marginTop:"3rem"}}>

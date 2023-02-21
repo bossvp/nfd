@@ -49,7 +49,7 @@ function ImagesGroup({btnStart}) {
             {" "}
             Confirm mission
           </h3>
-          <button onClick={()=>{ eSelect ? btnStart("Options") : console.log()}}>Start</button>
+          <button onClick={()=>{ eSelect ? btnStart("Options") : console.log("")}}>Start</button>
         </div>
       </div>
     </div>

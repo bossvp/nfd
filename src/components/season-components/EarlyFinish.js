@@ -9,6 +9,7 @@ function EarlyFinish() {
                 className="table__layout__blend"
                 style={{ fontWeight: "700" }}
               >
+                <tbody>
                 <tr>
                   <td>mission</td>
                   <td>|</td>
@@ -29,6 +30,7 @@ function EarlyFinish() {
                   <td>|</td>
                   <td>6/11/22 3:30</td>
                 </tr>
+                </tbody>
               </table>
               <h3 className='text-uppercase fw-bold mb-2'>
                 Max Finish date
@@ -58,6 +60,7 @@ function EarlyFinish() {
                 className="table__layout__blend"
                 style={{ fontWeight: "700" }}
               >
+                <tbody>
                 <tr>
                   <td>respect needed</td>
                   <td>|</td>
@@ -68,6 +71,7 @@ function EarlyFinish() {
                   <td>|</td>
                   <td>10%</td>
                 </tr>
+                </tbody>
               </table>
     </div>
   )

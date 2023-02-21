@@ -6,6 +6,7 @@ function InfoMision() {
       <h2 className="text-white text-uppercase text-center fw-bold" style={{marginTop:"10px"}}>info mission</h2>
 
 <table className="table__layout mb-4" style={{margin:"0 auto"}}>
+      <tbody>
       <tr>
         <td>Mission</td>
         <td>|</td>
@@ -31,6 +32,7 @@ function InfoMision() {
         <td>|</td>
         <td>13200 epheebo</td>
       </tr>
+      </tbody>
     </table>
 
     <h3 className="text-uppercase text-white fw-bold text-center p-0 m-0">Max amount to win</h3>
@@ -49,6 +51,7 @@ function InfoMision() {
     >120</p>
 
 <table className="table__layout mb-4" style={{margin:"0 auto"}}>
+      <tbody>
       <tr>
         <td>respect needed</td>
         <td>|</td>
@@ -64,6 +67,7 @@ function InfoMision() {
         <td>|</td>
         <td>4 days</td>
       </tr>
+      </tbody>
     </table>
           
 

@@ -9,6 +9,7 @@ function LockSlots() {
                 className="table__layout__blend"
                 style={{ fontWeight: "700" }}
               >
+                <tbody>
                 <tr>
                   <td>total time</td>
                   <td>|</td>
@@ -24,6 +25,7 @@ function LockSlots() {
                   <td>|</td>
                   <td>0 %</td>
                 </tr>
+                </tbody>
               </table>
               <h3 className='text-uppercase fw-bold mb-2'>
                 Assets Multiplier
@@ -48,6 +50,7 @@ function LockSlots() {
                 className="table__layout__blend"
                 style={{ fontWeight: "700" }}
               >
+                <tbody>
                 <tr>
                   <td>Neutral bonus</td>
                   <td>|</td>
@@ -68,6 +71,7 @@ function LockSlots() {
                   <td>|</td>
                   <td>10%</td>
                 </tr>
+                </tbody>
               </table>
     </div>
   )

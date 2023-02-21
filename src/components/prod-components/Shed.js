@@ -38,8 +38,8 @@ let j=0;
 for (let i = 1; i < 101; i++) {
   i=== 0 ? j=0 : i%4 === 0 ? j=0 : j++; 
   cards.push(
-    <div>
-      <img src={img[j]} alt="" />
+    <div key={i}>
+      <img src={img[j]} alt="" key={i}/>
       { i<10 ? <p>#00{i}</p> : <p>#0{i}</p>}
     </div>
   )

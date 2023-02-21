@@ -23,6 +23,14 @@ function Wallet() {
       setTabs({...tabs, [prop]:true})
     }
 
+    const cards =[]
+    for (let i = 0; i < 20; i++) {
+      cards.push(
+        <Card key={i}/>
+      )
+      
+    }
+
 
     let btnStyles = {
       background: "#C74C39"
@@ -81,29 +89,10 @@ function Wallet() {
             </div>
             {/* cards */}
             <div className="container__cards__blend">
-                        <Card />
-                        <Card />
-                        <Card />
-                        <Card />
-                        <Card />
-                        <Card />
-                        <Card />
-                        <Card />
-                        <Card />
-                        <Card />
-                        <Card />
-                        <Card />
-                        <Card />
-                        <Card />
-                        <Card />
-                        <Card />
-                        <Card />
-                        <Card />
-                        <Card />
-                        <Card />
-                        <Card />
-                        <Card />
-                        <Card />
+
+              {cards}
+                        
+                        
             </div>
           </>
         }

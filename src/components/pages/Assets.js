@@ -10,11 +10,11 @@ function Assets() {
     for (let i = 0; i < 26; i++) {
         i < 4 ?
         cards.push(
-            <Card text="BAG ( 28657 )" img={imgBag}/>
+            <Card key={i} text="BAG ( 28657 )" img={imgBag}/>
         )
         :
         cards.push(
-            <Card />
+            <Card key={i}/>
         )
         
     }

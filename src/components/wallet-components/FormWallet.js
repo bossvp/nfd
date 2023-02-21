@@ -8,26 +8,26 @@ function FormWallet() {
       <p className="text-uppercase fw-bold text-white edit-account">edit account</p>
         <div className="row">
           <div className="col-12 col-md-6">
-            <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label">
+            <div className="mb-3">
+              <label htmlFor="exampleFormControlInput1" className="form-label">
                 Username:*
               </label>
               <input
                 type="text"
-                class="form-control"
+                className="form-control"
                 id="exampleFormControlInput1"
                 placeholder="Add nick"
               />
             </div>
           </div>
           <div className="col-12 col-md-6">
-            <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label">
+            <div className="mb-3">
+              <label htmlFor="exampleFormControlInput1" className="form-label">
                 Secret:*
               </label>
               <input
                 type="text"
-                class="form-control"
+                className="form-control"
                 id="exampleFormControlInput1"
                 placeholder="Change code"
               />
@@ -37,13 +37,13 @@ function FormWallet() {
 
         <div className="row">
           <div className="col-12 col-md-6">
-            <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label">
+            <div className="mb-3">
+              <label htmlFor="exampleFormControlInput1" className="form-label">
                 Email:*
               </label>
               <input
                 type="email"
-                class="form-control"
+                className="form-control"
                 id="exampleFormControlInput1"
                 placeholder="Add email"
               />

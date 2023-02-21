@@ -6,7 +6,7 @@ import s from './stylesModals.module.scss'
 
 function SelectCard( {state, setstate} ) {
     const selectorCards = (e) =>{
-        console.log(e.target.classList)
+       
         e.target.classList.toggle(s["select"]);
 
 

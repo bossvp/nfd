@@ -23,6 +23,7 @@ function Personaje() {
             <h2 className='fw-bold text-uppercase text-white ps-3 mb-2' style={{marginTop:"35px"}}>Hugo 'shark' cruz</h2>
             <h3 className='fw-bold text-uppercase text-white ps-3'>item detail</h3>
             <table className="table__layout" style={{marginLeft:"15px"}}>
+                  <tbody>
                   <tr>
                     <td>assed id</td>
                     <td>|</td>
@@ -48,6 +49,7 @@ function Personaje() {
                     <td>|</td>
                     <td>sativa</td>
                   </tr>
+                  </tbody>
                 </table>
                 <h3 className='fw-bold text-uppercase mt-3'>Production</h3>
                 <table className="table__layout"  style={{marginLeft:"15px"}}>

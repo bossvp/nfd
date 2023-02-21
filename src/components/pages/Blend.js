@@ -90,6 +90,7 @@ function Blend() {
                 className="table__layout__blend"
                 style={{ fontWeight: "700" }}
               >
+                <tbody>
                 <tr>
                   <td>items</td>
                   <td>|</td>
@@ -100,6 +101,7 @@ function Blend() {
                   <td>|</td>
                   <td>0$PBO</td>
                 </tr>
+                </tbody>
               </table>
               <button className="btn-mediam me-5">Blend</button>
             </div>
