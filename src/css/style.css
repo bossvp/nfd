@@ -12,7 +12,9 @@ html {
   font-family: "Rajdhani", sans-serif;
 }
 
-
+/* *{
+  border: .2px solid white;
+} */
 /* cards-modals */
 .modal__cards{
   background-color: blue;
@@ -769,7 +771,8 @@ header .icono_bar {
 }
 
 .container__prod {
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
   padding-top: 9rem;
   padding-left: 4.5rem;
   padding-right: 4.5rem;
@@ -790,11 +793,20 @@ header .icono_bar {
 @media (max-width: 768px) {
   .prod__title {
     font-size: 3rem !important;
+    padding: 0;
   }
 }
 .prod__subtitle {
   font-size: 2.4rem;
   padding-left: 6.2rem;
+}
+@media (max-width: 768px) {
+
+  .prod__subtitle {
+    padding-left: 0;
+  }
+  
+
 }
 .prod__subtitle span {
   font-size: 1.4rem;
@@ -857,6 +869,10 @@ header .icono_bar {
   overflow-y: scroll;
   z-index: 100;
 }
+@media (max-width: 768px) {
+
+}
+
 .container__cards_mission {
   max-width: 100%;
   display: grid;
@@ -1056,7 +1072,7 @@ header .icono_bar {
       rgba(42, 42, 43, 0.404) 56%,
       rgba(44, 43, 43, 0.438) 100%
     ),
-    url("../img/bg-blend.jpg");
+    url("../img/season/background.jpg");
   /* background-color: transparent; */
   height: 100vh;
   max-width: 100%;
@@ -1103,9 +1119,20 @@ header .icono_bar {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 0.5rem;
-  height: 40rem;
+  height: 35rem;
   overflow-y: scroll;
+  margin-left: 45px;
 }
+@media (max-width: 768px) {
+ 
+  .container__cards__blend {
+    height: 40rem;
+    margin: 0;
+  }
+
+}
+
+
 .container__cards__blend::-webkit-scrollbar {
   display: block !important;
   height: 10px;
@@ -1145,8 +1172,14 @@ header .icono_bar {
 }
 @media (max-width: 768px) {
   .score__content {
-    width: 35%;
+    width: 70%;
   }
+  .score__card {
+    width: 100%;
+    
+  }
+ 
+
 }
 
 .score__card {
@@ -1155,6 +1188,13 @@ header .icono_bar {
   border: 1px solid gray;
   border-radius: 0.9rem;
 }
+@media (max-width: 768px) {
+
+  .score__card {
+    width: 100%;
+  }
+}
+
 
 .score__card__header {
   border-bottom: 1px solid gray;
@@ -1212,6 +1252,7 @@ header .icono_bar {
 @media (max-width: 768px) {
   .score__content__agrupamiento {
     flex-direction: column-reverse;
+    
   }
 }
 
@@ -1249,6 +1290,14 @@ header .icono_bar {
   background-color: rgb(31, 30, 30);
   width: 30%;
   margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .score__container-ultimocard {
+    width: 100%;
+    margin: 0;
+  }
+ 
+
 }
 
 .personaje__img {
@@ -1300,6 +1349,16 @@ header .icono_bar {
   
 
 }
+/* @media (max-width: 350px) {
+  .season__images {
+    
+    max-height: 32rem;
+    height: 450px;
+   
+    
+  
+  }
+} */
 
 
 .season__images div {
@@ -1788,7 +1847,7 @@ header .icono_bar {
   margin: 0;
 }
 .body_modal__footer {
-  height: 55%;
+  height: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1802,6 +1861,7 @@ header .icono_bar {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .modal__footer-buttons {
   width: 100%;
   display: flex;
@@ -1968,6 +2028,7 @@ header .icono_bar {
 .battle__buttons {
   margin-top: 2rem;
 }
+
 .battle__buttons button {
   border: none;
   outline: none;
@@ -1981,9 +2042,19 @@ header .icono_bar {
   margin-right: 4rem;
   transition: background-color 0.5s ease-in-out;
 }
+
 .battle__buttons button:hover {
   background-color: rgb(118, 79, 55);
 }
+@media (max-width: 768px) {
+  .battle__buttons {
+    display: flex;
+  }
+  .battle__buttons button {
+    margin: 0;
+  }
+}
+
 
 .container__info {
   display: flex;
@@ -2144,9 +2215,7 @@ header .icono_bar {
   outline: none !important;
   /*   text-align: center !important; */
 }
-.fondoSelect option {
-  /*   text-align: center !important; */
-}
+
 
 .container_selects {
   display: flex;
@@ -2222,6 +2291,8 @@ header .icono_bar {
   object-fit: cover;
   margin-bottom: 1rem;
 }
+
+
 .wallet-nickname {
   font-weight: 700;
   font-size: 2rem;
@@ -2256,6 +2327,18 @@ header .icono_bar {
 .form-wallet {
   padding-left: 7rem;
 }
+@media (max-width: 768px) {
+  .form-wallet {
+    padding-left: 0;
+  }
+  .container__wallet__info .wallet-info svg {
+    display: none;
+  }
+  .container__wallet__info .wallet-info p {
+    font-size: 2rem;
+  }
+}
+
 .form-wallet label {
   color: white;
   font-size: 3rem;

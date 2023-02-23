@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Footer from "../Footer";
 import Shark from "../../img/shark.png";
 import Phi from "../../img/phi201.png";
 import PadLock from "../../img/padlock.png";
@@ -118,7 +117,7 @@ function Prod() {
 
                 <div
                   className="container__cards"
-                  style={{ marginLeft: "45px" }}
+                  // style={{ marginLeft: "45px" }}
                 >
                   <div
                     className="card__prod"
@@ -158,7 +157,7 @@ function Prod() {
 
                 <div
                   className="container__locked"
-                  style={{ marginLeft: "45px" }}
+                  // style={{ marginLeft: "45px" }}
                 >
                   <div
                     className="card__prod__locked"

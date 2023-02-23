@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Card from "../blend-components/Card";
-import Footer from "../Footer";
+
 import Hat from "../../img/hat.png";
 import Level from "../../img/level.png";
 import Moustache from "../../img/moustache.png";
@@ -63,7 +63,7 @@ function Blend() {
 
             <div
               className="container__cards__blend"
-              style={{ marginLeft: "45px" }}
+              // style={{ marginLeft: "45px" }}
             >
               <Card />
               <Card />
@@ -85,7 +85,7 @@ function Blend() {
             <p className="text-uppercase fw-bold h2 text-end pe-5 pt-4">
               Confirm blend
             </p>
-            <div className="d-flex flex-column justify-content-end align-items-end">
+            <div className="d-flex flex-column justify-content-end align-items-end ">
               <table
                 className="table__layout__blend"
                 style={{ fontWeight: "700" }}
@@ -168,11 +168,10 @@ function Blend() {
                     <span>280/2,500 xP</span>
                   </div>
                 </div>
+
               </div>
              
-              
-            </div>
-            <div className="score__container-ultimocard">
+              <div className="score__container-ultimocard">
             <div className="score__card ">
                   <div className="score__card__header">
                     <div className="score-title">
@@ -183,8 +182,10 @@ function Blend() {
                     <p>000</p>
                     <span>L impsun</span>
                   </div>
-                </div>
             </div>
+              </div>
+            </div>
+            
             
           </div>
         </div>

@@ -5,7 +5,7 @@ import iconInfo from '../../img/info.png'
 
 function Information({eSelect,seteoWindow,setText, eText, color = "#B06A26", btnInfo}) {
   return (
-    <div className="col-12 col-md-3 d-flex flex-column" style={{ alignItems:"start"  }}>
+    <div className="col-12 col-md-3 d-flex flex-column" >
 
         <div className='d-flex justify-content-center align-items-center' style={{marginBottom:"2.5rem"}}> 
             <img src={iconInfo} alt=""  style={{width:"2rem", height:"2rem" , marginRight:"2rem"}}/>

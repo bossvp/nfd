@@ -61,27 +61,27 @@ function Equip({state, setState}) {
       
       
           <div className="row  mt-4 px-3 d-flex justify-content-center align-items-center">
-            <div className="col-12 col-md-4" >
+            <div className="col-6 col-md-4" >
               {" "}
              <img src={Item1} alt="" style={bg}/>
             </div>
-            <div className="col-12 col-md-4" >
+            <div className="col-6 col-md-4" >
               {" "}
               <img src={Item2} alt="" style={bg}/>
             </div>
-            <div className="col-12 col-md-4 " >
+            <div className="col-6 col-md-4 " >
               {" "}
               <img src={Item3} alt="" style={bg}/>
             </div>
-            <div className="col-12 col-md-4 mt-4" >
+            <div className="col-6 col-md-4 mt-4" >
               {" "}
              <img src={Item1} alt="" style={bg}/>
             </div>
-            <div className="col-12 col-md-4 mt-4" >
+            <div className="col-6 col-md-4 mt-4" >
               {" "}
               <img src={Item2} alt="" style={bg}/>
             </div>
-            <div className="col-12 col-md-4 mt-4" >
+            <div className="col-6 col-md-4 mt-4" >
               {" "}
               <img src={Item3} alt="" style={bg}/>
             </div>
