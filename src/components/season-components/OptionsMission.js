@@ -55,7 +55,7 @@ function OptionsMission() {
 
           </div>
           <div
-            className="col-12 col-xl-10"
+            className="container__table_missions col-12 col-xl-10"
           >
           { eTabs.Info &&
             <EarlyFinish/> 

@@ -223,7 +223,7 @@ function Prod() {
               </div>
 
               <div
-                className="col-12 col-md-5 "
+                className="col-12 col-md-5 overflow-auto"
                 
               >
                 {eElement.table && (

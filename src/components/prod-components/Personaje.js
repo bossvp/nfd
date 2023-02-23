@@ -2,7 +2,7 @@ import React from 'react'
 import Shark from "../../img/shark.png"
 function Personaje() {
   return (
-    <div className='container max-vh-30' id='cont' style={{height:"460px !important", maxHeight:"460px !important"}}>
+    <div className='container__buttons__prod_info max-vh-30' id='cont' style={{height:"460px !important", maxHeight:"460px !important"}}>
 
         <div className="row" style={{marginTop:"4rem"}} >
             <div className='h1 text-uppercase text-white fw-bold d-flex justify-content-between align-items-center' >
