@@ -22,6 +22,11 @@ import CardGang from './components/gangs-components/CardGang';
 import Profile from './components/pages/Profile';
 import Assets from './components/pages/Assets';
 
+import {
+  CSSTransition,
+  TransitionGroup,
+} from 'react-transition-group';
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -39,7 +44,7 @@ const router = createBrowserRouter(
     //     element:<Secret/>
     //   },
     // ],
-    errorElement:<Error/>
+    // errorElement:<Error/>
   },
   {
     path: "/prod",
@@ -51,7 +56,7 @@ const router = createBrowserRouter(
       },
      
     ],
-        errorElement:<Error/>
+        // errorElement:<Error/>
   },
   {
     path: "/blend",
@@ -63,7 +68,7 @@ const router = createBrowserRouter(
       },
      
     ],
-        errorElement:<Error/>
+        // errorElement:<Error/>
   },
   {
     path: "/season",
@@ -75,7 +80,7 @@ const router = createBrowserRouter(
       },
      
     ],
-        errorElement:<Error/>
+        // errorElement:<Error/>
   },
   {
     path: "/gangs",
@@ -87,7 +92,7 @@ const router = createBrowserRouter(
       },
      
     ],
-        errorElement:<Error/>
+        // errorElement:<Error/>
   },
   {
     path: "/gangs/rank",
@@ -99,7 +104,7 @@ const router = createBrowserRouter(
       },
      
     ],
-        errorElement:<Error/>
+        // errorElement:<Error/>
   },
 
 
@@ -113,7 +118,7 @@ const router = createBrowserRouter(
       },
      
     ],
-        errorElement:<Error/>
+        // errorElement:<Error/>
   },
   {
     path: "/coffeshop",
@@ -126,7 +131,7 @@ const router = createBrowserRouter(
       },
      
     ],
-        errorElement:<Error/>
+        // errorElement:<Error/>
   },
   {
     path: "/wallet",
@@ -139,7 +144,7 @@ const router = createBrowserRouter(
       },
      
     ],
-        errorElement:<Error/>
+        // errorElement:<Error/>
   },
   {
     path: "/profile",
@@ -152,7 +157,7 @@ const router = createBrowserRouter(
       },
      
     ],
-        errorElement:<Error/>
+        // errorElement:<Error/>
   },
   {
     path: "/assets",
@@ -165,7 +170,7 @@ const router = createBrowserRouter(
       },
      
     ],
-        errorElement:<Error/>
+        // errorElement:<Error/>
   },
 
   {
@@ -179,8 +184,13 @@ const router = createBrowserRouter(
       },
      
     ],
-        errorElement:<Error/>
+        // errorElement:<Error/>
   },
+  {
+    path: "*",
+    element:<Error/>
+  },
+
 ]);
 
 root.render(
