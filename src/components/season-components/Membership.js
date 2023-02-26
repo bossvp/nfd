@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import CardCoffe from '../coffe-components/CardCoffe'
 import CardSeason from './CardSeason';
 import cardGold from '../../img/gold_pss.png'
-import { fontWeight } from '@mui/system';
 import SelectCard from "../Modals/SelectCard";
 
 
