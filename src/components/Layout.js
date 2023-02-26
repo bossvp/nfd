@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 import Logo from "../img/logo.png";
-import icon from "../img/statisc.svg";
 
 import hat from "../img/hat.png"
 import level from "../img/level.png"
@@ -9,7 +8,8 @@ import moustache from "../img/moustache.png"
 
 function Layout() {
   const [abrir, setAbrir] = useState(false);
-
+  const [slistAssets,setSlistAssets] =useState(false)
+  const [slistSeason,setSlistSeason] =useState(false)
   return (
     <>
       <header style={{ zIndex: 999 }}>
@@ -24,18 +24,20 @@ function Layout() {
               : "container__menu__layout"
           }`}
         >
+        {/* MENU BAR */}
           <ul className="container__menu__layout__list listAntiguo"
             
           >
-            <li>
+            <li onClick={()=>setAbrir(!abrir)}>
               <Link
-                to="/"
+                to="/prod"
                 className="container__menu__layout__list__link button"
               >
-                Base
+                Prod
               </Link>
             </li>
-            <li>
+
+            {/* <li>
               <Link
                 to="/blend"
                 className="container__menu__layout__list__link button"
@@ -50,24 +52,31 @@ function Layout() {
               >
                 Prod
               </Link>
-            </li>
+            </li> */}
+
             <li>
-              <Link
-                to=""
-                className="container__menu__layout__list__link button"
-              >
-                Season
-              </Link>
+            <p className="container__menu__layout__list__link button" id="btn__sublist-season" onClick={()=>setSlistSeason(!slistSeason)}>season</p>
+            {/* SUBLISTA DE SEASON */}
+              <ul className="sublista__layout" style={!slistSeason ? {display:"none"} : {display:"block"}}>
+                <li onClick={()=>setAbrir(!abrir)}><Link to="/stats" className="button__sublista_layout"> stats </Link></li>
+                <li onClick={()=>setAbrir(!abrir)}><Link to="/season" className="button__sublista_layout"> Season </Link></li>
+                <li onClick={()=>setAbrir(!abrir)}><Link to="/gangs" className="button__sublista_layout"> gangs </Link></li>
+                <li onClick={()=>setAbrir(!abrir)}><Link to="/battle" className="button__sublista_layout"> battle </Link></li>
+              </ul>
             </li>
+            
             <li>
-              <Link
-                to="/assets"
-                className="container__menu__layout__list__link button"
-              >
-                Assets
-              </Link>
+            <p className="container__menu__layout__list__link button" id="btn__sublist-assets" onClick={()=>setSlistAssets(!slistAssets)}>assets</p>
+            {/* SUBLISTA DE ASSETS */}
+              <ul className="sublista__layout" style={!slistAssets ? {display:"none"} : {display:"block"} }>
+                <li onClick={()=>setAbrir(!abrir)}><Link to="/wallet" className="button__sublista_layout"> wallet </Link></li>
+                <li onClick={()=>setAbrir(!abrir)}><Link to="/assets" className="button__sublista_layout"> game items </Link></li>
+                <li onClick={()=>setAbrir(!abrir)}><Link to="/blend" className="button__sublista_layout"> blend </Link></li>
+              </ul>
             </li>
+            
           </ul>
+        {/* <-----------------------------------------------------------> */}
 
           <ul className="container__menu__layout__list menu-horizontal">
             {/* producc */}
@@ -125,6 +134,8 @@ function Layout() {
               </ul>
             </li>
 
+
+
             {/* assets */}
             <li>
               <Link
@@ -164,7 +175,7 @@ function Layout() {
           </ul>
 
           <ul className="layout__options">
-            <li>
+            <li onClick={()=>setAbrir(!abrir)}>
               <Link to="/profile" className="layout__options__link">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -177,7 +188,7 @@ function Layout() {
                 </svg>
               </Link>
             </li>
-            <li>
+            <li onClick={()=>setAbrir(!abrir)}>
               <Link to="/CoffeShop" className="layout__options__link">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -192,7 +203,7 @@ function Layout() {
               </Link>
             </li>
 
-            <li>
+            <li onClick={()=>setAbrir(!abrir)}>
               <Link
                 to=""
                 className="layout__options__link svg_statis"
@@ -291,7 +302,7 @@ function Layout() {
                 </svg>
               </Link>
             </li>
-            <li>
+            <li className="layout__options_btn-logout">
               <Link to="/" className="button ">
                 Logout{" "}
               </Link>
