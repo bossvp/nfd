@@ -5,14 +5,20 @@ import Footer from "../Footer";
 import Preloader from "./Preloader";
 
 function Secret() {
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    setLoading(true);
-    setTimeout(()=>{
-      setLoading(false);
-    },8000);
-  }, [])
+    setLoading(false)
+  }, []);
+  
+
+  // useEffect(() => {
+
+  //   setLoading(true);
+  //   setTimeout(()=>{
+  //     setLoading(false);
+  //   },3000);
+  // }, [])
   
   
 

@@ -44,7 +44,7 @@ const router = createBrowserRouter(
     //     element:<Secret/>
     //   },
     // ],
-    // errorElement:<Error/>
+    errorElement:<Error/>
   },
   {
     path: "/prod",
@@ -56,7 +56,7 @@ const router = createBrowserRouter(
       },
      
     ],
-        // errorElement:<Error/>
+        errorElement:<Error/>
   },
   {
     path: "/blend",
@@ -68,7 +68,7 @@ const router = createBrowserRouter(
       },
      
     ],
-        // errorElement:<Error/>
+        errorElement:<Error/>
   },
   {
     path: "/season",
@@ -80,7 +80,7 @@ const router = createBrowserRouter(
       },
      
     ],
-        // errorElement:<Error/>
+        errorElement:<Error/>
   },
   {
     path: "/gangs",
@@ -92,7 +92,7 @@ const router = createBrowserRouter(
       },
      
     ],
-        // errorElement:<Error/>
+        errorElement:<Error/>
   },
   {
     path: "/gangs/rank",
@@ -104,7 +104,7 @@ const router = createBrowserRouter(
       },
      
     ],
-        // errorElement:<Error/>
+        errorElement:<Error/>
   },
 
 
@@ -118,7 +118,7 @@ const router = createBrowserRouter(
       },
      
     ],
-        // errorElement:<Error/>
+        errorElement:<Error/>
   },
   {
     path: "/coffeshop",
@@ -131,7 +131,7 @@ const router = createBrowserRouter(
       },
      
     ],
-        // errorElement:<Error/>
+        errorElement:<Error/>
   },
   {
     path: "/wallet",
@@ -144,7 +144,7 @@ const router = createBrowserRouter(
       },
      
     ],
-        // errorElement:<Error/>
+        errorElement:<Error/>
   },
   {
     path: "/profile",
@@ -157,7 +157,7 @@ const router = createBrowserRouter(
       },
      
     ],
-        // errorElement:<Error/>
+        errorElement:<Error/>
   },
   {
     path: "/assets",
@@ -170,7 +170,7 @@ const router = createBrowserRouter(
       },
      
     ],
-        // errorElement:<Error/>
+        errorElement:<Error/>
   },
 
   {
@@ -184,7 +184,7 @@ const router = createBrowserRouter(
       },
      
     ],
-        // errorElement:<Error/>
+        errorElement:<Error/>
   },
   {
     path: "*",
