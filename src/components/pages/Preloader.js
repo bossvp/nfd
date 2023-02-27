@@ -8,12 +8,6 @@ function Preloader() {
             <img src={moustache}/>
             
             <div className='box_loader'>
-                <div className="spinner__preloader">
-                  <div className="point__spinner"></div>
-                  <div className="point__spinner"></div>
-                  <div className="point__spinner"></div>
-                  <div className="point__spinner"></div>
-                </div>
 
                 <div className='dot-spinner'>
                   <div></div>
@@ -29,9 +23,7 @@ function Preloader() {
                   <div></div>
                   <div></div>
                 </div>
-              {/* <div className="loader">
-                  
-              </div> */}
+              
               <p>LOADING</p>
             </div>
             
