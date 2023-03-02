@@ -1902,6 +1902,7 @@ header .icono_bar {
   background-color: rgb(117, 145, 216);
   padding: 1rem 0;
 }
+
 .card__gang-yourgang {
   display: flex;
   justify-content: center;
@@ -1920,6 +1921,25 @@ header .icono_bar {
   object-fit: cover;
   width: 3rem;
   height: 3rem;
+}
+
+@media (max-width: 768px) {
+  .card__gang {
+    
+    gap: 1rem;
+   
+    width: auto;
+  }
+  .yourgang {
+    width: 100%;
+    padding: 1rem 0;
+  }
+  
+  .card__gang-yourgang {
+    
+    gap: 1rem;
+  }
+
 }
 
 .card__gang span {
@@ -2687,9 +2707,20 @@ header .icono_bar {
   border-radius: 4px;
 }
 @media (max-width: 768px) {
-  .table__week td {
+  .table__week thead tr td {
+    font-size: 1.5rem;
+    padding: 0.1rem 0.5rem;
+    text-align: center;
     
-    padding: .1rem 0;
+  }
+  
+  
+  
+  .table__week tbody tr td {
+    /* text-align: center;
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid white; */
   }
 
 }

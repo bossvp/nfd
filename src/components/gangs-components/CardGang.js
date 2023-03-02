@@ -1,8 +1,8 @@
 import React from "react";
 import User from "../../img/gangs/user.png";
 import Brow from "../../img/gangs/mt_brow.png";
-import Footer from "../Footer";
 import { Link } from "react-router-dom";
+
 function CardGang() {
   const boxUserOne = [];
   const boxUserTwo = [];
@@ -73,9 +73,9 @@ function CardGang() {
           </h2>
         </div>
 
-        <div className="row">
+        <div className="row ">
         
-        <div className="col-12 col-xl-6">
+        <div className="col-12 col-xl-6 overflow-auto">
 
 
         <div className="row">
@@ -282,7 +282,7 @@ function CardGang() {
                   <p>42500</p>
                 </div>
               </div>
-            </div>
+        </div>
             <Link to="/Gangs" >
                <button>  Leave</button>
             </Link>
@@ -294,8 +294,8 @@ function CardGang() {
       </div>
          
         </div>
+
       </div>
-      <Footer />
     </div>
   );
 }
