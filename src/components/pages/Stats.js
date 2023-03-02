@@ -3,7 +3,6 @@ import Buttons from "../stats-components/Buttons";
 import TableLucky from "../stats-components/TableLucky";
 import TableRewards from "../stats-components/TableRewards";
 import TableWeek from "../stats-components/TableWeek";
-import Footer from "../Footer";
 import { useState } from "react";
 function Stats() {
   const [eTabs, setTabs] = useState({

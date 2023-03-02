@@ -66,7 +66,7 @@ function Information({eSelect,seteoWindow,setText, eText, color = "#B06A26", btn
         </tbody>
         </table>
 
-        <div className="row" style={{marginTop:"3rem"}}>
+        <div className="row button__prod" style={{marginTop:"3rem"}}>
           <div className="col-12 d-flex flex-column justify-content-center align-items-center">
             <h3 className="text-white fw-bold text-uppercase ">
               {" "}
@@ -89,8 +89,10 @@ function Information({eSelect,seteoWindow,setText, eText, color = "#B06A26", btn
             >
               NEXT
             </button>
+
           </div>
         </div>
+
       </div>
   )
 }

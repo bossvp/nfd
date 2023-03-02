@@ -1,8 +1,5 @@
 import React, { useState } from "react";
 import Associate from "../../img/season/associate.png";
-// import Untouchable from "../../img/season/untouchable.png";
-// import Lieutenant from "../../img/season/lieutenant.png";
-// import Baron from "../../img/season/baron.png";
 import Information from "./Information";
 
 function Planet({ seteoWindow, setText, eText, btnInfo }) {

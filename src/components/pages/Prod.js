@@ -84,7 +84,7 @@ function Prod() {
       <div className="container-fluid">
         <div className="row container__prod">
           <div className="h1 text-uppercase text-white fw-bold d-flex justify-content-center flex-column align-items-start">
-            <p className="h1 text-uppercase text-white fw-bold" style={{textAlign:"start", fontSize:"5rem"}}>
+            <p className="h1 text-uppercase text-white fw-bold prod__tittle" style={{textAlign:"start", fontSize:"4rem"}}>
               {eText.tittle} 
               <span className=" h3 text-uppercase text-white fw-bold" style={{marginLeft:".8em"}}>{eWindow.Produce ?  "PHEEBO | WEED | SATIVA | #1257" : ""}</span>
               
