@@ -19,7 +19,7 @@ function Personaje() {
             <img src={Shark} alt="" className='personaje__img'/>
             <p style={{textAlign: "center", fontWeight:"bold"}}>Expires on: 30 December <br /> 2022 at 18:24:13</p>
             </div>
-            <div className="col-12 col-md-6">
+            <div className="col-12 col-md-6 table__personaje">
             <h2 className='fw-bold text-uppercase text-white ps-3 mb-2' style={{marginTop:"35px"}}>Hugo 'shark' cruz</h2>
             <h3 className='fw-bold text-uppercase text-white ps-3'>item detail</h3>
             <table className="table__layout" style={{marginLeft:"15px"}}>

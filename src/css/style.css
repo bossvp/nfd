@@ -14,7 +14,7 @@ html {
 
 
 /* *{
-  border: .2px solid white;
+  border: .002px solid white;
 } */
 /* cards-modals */
 .modal__cards{
@@ -550,6 +550,12 @@ h4 {
 }
 .btn-mediam:hover {
   background: rgba(255, 255, 255, 0.4);
+}
+
+@media (max-width: 768px) {
+  .btn-mediam {
+    padding: 0.4rem 3rem;
+  }
 }
 
 .container__title {
@@ -1303,20 +1309,23 @@ header .icono_bar {
     height: 40rem;
     margin: 0;
   }
-
 }
-
 
 .container__cards__blend::-webkit-scrollbar {
   display: block !important;
-  height: 10px;
-  width: 10px;
+  height: 3px;
+  width: 3px;
   background-color: rgb(18, 2, 10);
 }
 .container__cards__blend::-webkit-scrollbar-thumb {
-  background-color: rgb(76, 55, 67);
+  background-color: white;
   border-radius: 4px;
 }
+
+
+
+
+
 .score-blend {
   font-size: 4.8rem !important;
   margin-top: 9rem;
@@ -1473,6 +1482,14 @@ header .icono_bar {
  
 
 }
+@media (max-width: 768px) {
+  .table__personaje{
+    overflow: auto;
+    height: 21.5vh;
+  }
+  
+}
+
 
 .personaje__img {
   width: 20rem;
@@ -2435,15 +2452,26 @@ header .icono_bar {
   /*   text-align: center !important; */
 }
 
-
+@media (max-width: 768px) {
+  .box__select {
+    overflow: auto;
+    
+    
+  }
+  
+}
 .container_selects {
+  overflow: hidden;
+  width: 150vw;
   display: flex;
   gap: 2rem;
   justify-content: center;
   align-items: center;
   margin-bottom: 2rem;
 }
-
+.container_selects div{
+  width: 100%;
+}
 .table__Wallet {
   color: white;
   margin: 0 auto;
@@ -2715,14 +2743,6 @@ header .icono_bar {
   }
   
   
-  
-  .table__week tbody tr td {
-    /* text-align: center;
-    font-size: 1.6rem;
-    padding: 1rem 0;
-    border-bottom: 1px solid white; */
-  }
-
 }
 .button-stats {
   border: none;

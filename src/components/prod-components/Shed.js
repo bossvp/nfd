@@ -51,7 +51,7 @@ for (let i = 1; i < 101; i++) {
     
       <div className="col-12 col-md-9 flex-column">
 <div className="col-12 " style={{display:"flex", flexDirection:"column" }}>
-                <div className="float-end">
+                <div className="float-end box__select">
                   <div className="container_selects">
                     <div>
                       <Form.Select

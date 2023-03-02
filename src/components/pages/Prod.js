@@ -370,7 +370,7 @@ function Prod() {
                 )}
 
                 <div className="row">
-                  <div className="mt-4 ms-4">
+                  <div className="mt-4 ">
                     <p className="text-uppercase fw-bolder h2 ">Production</p>
                     <div className="ms-5">
                       <p className="text-uppercase fw-bolder h2 ">

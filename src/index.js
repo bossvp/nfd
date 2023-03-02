@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import App from './App';
 
 import '../src/css/normalize.css'
 import '../src/css/style.css'
@@ -22,18 +21,9 @@ import CardGang from './components/gangs-components/CardGang';
 import Profile from './components/pages/Profile';
 import Assets from './components/pages/Assets';
 
-import {
-  CSSTransition,
-  TransitionGroup,
-} from 'react-transition-group';
-
-
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter(
-  
-  
-  
   [
   {
     path: "/",
@@ -195,6 +185,6 @@ const router = createBrowserRouter(
 
 root.render(
   <React.StrictMode>
-   <RouterProvider router={router} />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );

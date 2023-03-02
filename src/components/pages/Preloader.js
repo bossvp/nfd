@@ -5,7 +5,7 @@ function Preloader() {
   return (
     <div className="PagePreloader " style={{heigth:"100vh", width:"100vw", background:"#202020"}}>
         <div className="containerLoader">
-            <img src={moustache}/>
+            <img src={moustache} alt="Ds"/>
             
             <div className='box_loader'>
 
