@@ -2452,26 +2452,40 @@ header .icono_bar {
   /*   text-align: center !important; */
 }
 
+
+.box__select {
+  float: end;
+  
+}
+
 @media (max-width: 768px) {
   .box__select {
     overflow: auto;
     
-    
+  }
+  .container_selects {
+    overflow: hidden;
+    width: 150vw;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  .container_selects div{
+    width: 100%;
   }
   
 }
-.container_selects {
-  overflow: hidden;
-  width: 150vw;
-  display: flex;
-  gap: 2rem;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 2rem;
+
+.tables__TableWallet{
+  overflow: auto;
 }
-.container_selects div{
-  width: 100%;
-}
+
+
+
+
+
 .table__Wallet {
   color: white;
   margin: 0 auto;
