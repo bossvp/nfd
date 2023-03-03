@@ -13,11 +13,12 @@ function SelectCard( {state, setstate} ) {
     for (let i = 0; i < 21; i++) {
         card.push(
             <div className={s.card } key={i} onClick={selectorCards}>
-                <img src={state.img} alt="" />
 
+                <img src={state.img} alt="" />
                 <p style={{fontWeight:"bold", margin:".8em 0 1.3em", pointerEvents:"none"}}>
                     BIKE (001)
                 </p>
+                
             </div>
         )   
     }

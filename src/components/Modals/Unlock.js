@@ -1,5 +1,4 @@
 import React from 'react'
-import s from './stylesModals.module.scss'
 
 
 
@@ -9,7 +8,7 @@ function Unlock( {state, setstate} ) {
   
   return (
     <>
-        {state &&
+        {/* {state &&
             <div className={s.containerModalAddCard}>
 
                 <div className={s.boxModalUnlock}>
@@ -33,7 +32,7 @@ function Unlock( {state, setstate} ) {
 
                 </div> 
             </div>
-        } 
+        }  */}
     </>
   )
 }

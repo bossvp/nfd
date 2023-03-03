@@ -12,17 +12,13 @@ import Shed from "../prod-components/Shed";
 import SelectCard from "../Modals/SelectCard";
 import Unlock from "../Modals/Unlock";
 
-import briefcase from '../../img/briefcase-1.png'
+import briefcase from "../../img/briefcase-1.png";
 import ModalText from "../Modals/ModalText";
-
-
-
+import ModalCards from "../Modals/ModalCards";
 
 function Prod() {
-
   // modalText
-  const [modalText, setModalText] = useState(false)
-
+  const [modalText, setModalText] = useState(false);
 
   const [active, setActive] = useState(false);
   const activarCard = () => {
@@ -76,35 +72,76 @@ function Prod() {
     subtitle: "Lorem ipsum dolor sit Amet.",
   });
 
+  const [MSBriefCase, setMSBriefcase] = useState(false);
+  const [MSPhi, setMSPhi] = useState(false);
 
-  const [eModalSelect,setModalSelect] =useState({
-    active:false,
-    img: Shark,
-    tittle: "Card",
-  });
-
-  const [eModalUnlock,setModalUnlock] =useState(false)
+  const [eModalUnlock, setModalUnlock] = useState(false);
 
   return (
     <div className="background__prod">
       <div className="container-fluid">
         <div className="row container__prod">
           <div className="h1 text-uppercase text-white fw-bold d-flex justify-content-center flex-column align-items-start">
-            <p className="h1 text-uppercase text-white fw-bold prod__tittle" style={{textAlign:"start", fontSize:"4rem"}}>
-              {eText.tittle} 
-              <span className=" h3 text-uppercase text-white fw-bold" style={{marginLeft:".8em"}}>{eWindow.Produce ?  "PHEEBO | WEED | SATIVA | #1257" : ""}</span>
-              
+            <p
+              className="h1 text-uppercase text-white fw-bold prod__tittle"
+              style={{ textAlign: "start", fontSize: "4rem" }}
+            >
+              {eText.tittle}
+              <span
+                className=" h3 text-uppercase text-white fw-bold"
+                style={{ marginLeft: ".8em" }}
+              >
+                {eWindow.Produce ? "PHEEBO | WEED | SATIVA | #1257" : ""}
+              </span>
             </p>
-            
-           
           </div>
 
-          {eWindow.Planet && <Planet seteoWindow={seteoWindow} setText={setText} eText={eText} btnInfo={{tittle: "Territories", subtitle:"Lorem ipsum dolor sit Amet.", set:"Territories"}}/>}
-          {eWindow.Territories && <Territories seteoWindow={seteoWindow} setText={setText} eText={eText} btnInfo={{tittle: "NeighBouroods", subtitle:"Lorem ipsum dolor sit Amet.", set:"Neigh"}}/>}
-          {eWindow.Neigh && <Neigh seteoWindow={seteoWindow} setText={setText} eText={eText} btnInfo={{tittle: "Shed", subtitle:"Lorem ipsum dolor sit Amet.", set:"Shed"}}/>}
+          {eWindow.Planet && (
+            <Planet
+              seteoWindow={seteoWindow}
+              setText={setText}
+              eText={eText}
+              btnInfo={{
+                tittle: "Territories",
+                subtitle: "Lorem ipsum dolor sit Amet.",
+                set: "Territories",
+              }}
+            />
+          )}
+          {eWindow.Territories && (
+            <Territories
+              seteoWindow={seteoWindow}
+              setText={setText}
+              eText={eText}
+              btnInfo={{
+                tittle: "NeighBouroods",
+                subtitle: "Lorem ipsum dolor sit Amet.",
+                set: "Neigh",
+              }}
+            />
+          )}
+          {eWindow.Neigh && (
+            <Neigh
+              seteoWindow={seteoWindow}
+              setText={setText}
+              eText={eText}
+              btnInfo={{
+                tittle: "Shed",
+                subtitle: "Lorem ipsum dolor sit Amet.",
+                set: "Shed",
+              }}
+            />
+          )}
 
-          {eWindow.Shed && <Shed seteoWindow={seteoWindow} setText={setText} eText={eText} btnInfo={{tittle: "PRODUCE NFD", subtitle:"", set:"Produce"}}/>}
-          {eWindow.Produce && 
+          {eWindow.Shed && (
+            <Shed
+              seteoWindow={seteoWindow}
+              setText={setText}
+              eText={eText}
+              btnInfo={{ tittle: "PRODUCE NFD", subtitle: "", set: "Produce" }}
+            />
+          )}
+          {eWindow.Produce && (
             <>
               <div className="col-12 col-md-7">
                 <div className="row mb-2">
@@ -144,15 +181,18 @@ function Prod() {
                       src={PadLock}
                       style={{ width: "8em", height: "8em" }}
                     />
+
+                    {MSBriefCase && (
+                      <ModalCards state={MSBriefCase} setstate={setMSBriefcase} img={briefcase} />
+                    )}
                     <button
-                      
-                      onClick={()=> setModalSelect({ ...eModalSelect, active: true, tittle: "BAG", img:briefcase })}
+                      onClick={() => setMSBriefcase(!MSBriefCase)}
                       style={{ width: "10em" }}
                       className="btn btn-dark btn-lg btn-block position-absolute bottom-0 m-2 w-9em"
                     >
                       SELECT BAG
                     </button>
-                    <SelectCard state={eModalSelect} setstate={setModalSelect}/>
+                    {/* <SelectCard state={eModalSelect} setstate={setModalSelect}/> */}
                   </div>
                   <div className="card__prod">
                     <img src={Satin} alt="" />
@@ -160,8 +200,10 @@ function Prod() {
                     <span></span>
                   </div>
                 </div>
-              {/* empty and locked slot */}
-                {modalText && <ModalText state={modalText} setState={setModalText}/>} 
+                {/* empty and locked slot */}
+                {modalText && (
+                  <ModalText state={modalText} setState={setModalText} />
+                )}
                 <div
                   className="container__locked"
                   // style={{ marginLeft: "45px" }}
@@ -183,15 +225,24 @@ function Prod() {
                     <span></span>
                   </div>
 
-                  <div className="card__prod__locked_slot" onClick={()=> setModalText(!modalText)}>
+                  <div
+                    className="card__prod__locked_slot"
+                    onClick={() => setModalText(!modalText)}
+                  >
                     <p className="fw-bold pt-2">LOCKED SLOT</p>
                     <img src={PadLock} alt="" />
                   </div>
-                  <div className="card__prod__locked_slot" onClick={()=> setModalText(!modalText)}>
+                  <div
+                    className="card__prod__locked_slot"
+                    onClick={() => setModalText(!modalText)}
+                  >
                     <p className="fw-bold pt-2">LOCKED SLOT</p>
                     <img src={PadLock} alt="" />
                   </div>
-                  <div className="card__prod__locked_slot" onClick={()=> setModalText(!modalText)}>
+                  <div
+                    className="card__prod__locked_slot"
+                    onClick={() => setModalText(!modalText)}
+                  >
                     <p className="fw-bold pt-2">LOCKED SLOT</p>
                     <img src={PadLock} alt="" />
                   </div>
@@ -201,26 +252,26 @@ function Prod() {
                   <div className="col-12">
                     <table className="table__layout">
                       <tbody>
-                      <tr>
-                        <td>bullets</td>
-                        <td>|</td>
-                        <td>10</td>
-                      </tr>
-                      <tr>
-                        <td>epheebo</td>
-                        <td>|</td>
-                        <td>1,000,000.53673</td>
-                      </tr>
-                      <tr>
-                        <td>$PBO</td>
-                        <td>|</td>
-                        <td>1,000,000.53673</td>
-                      </tr>
-                      <tr>
-                        <td>LVL</td>
-                        <td>|</td>
-                        <td>Baron 10.00/15.00 respect</td>
-                      </tr>
+                        <tr>
+                          <td>bullets</td>
+                          <td>|</td>
+                          <td>10</td>
+                        </tr>
+                        <tr>
+                          <td>epheebo</td>
+                          <td>|</td>
+                          <td>1,000,000.53673</td>
+                        </tr>
+                        <tr>
+                          <td>$PBO</td>
+                          <td>|</td>
+                          <td>1,000,000.53673</td>
+                        </tr>
+                        <tr>
+                          <td>LVL</td>
+                          <td>|</td>
+                          <td>Baron 10.00/15.00 respect</td>
+                        </tr>
                       </tbody>
                     </table>
 
@@ -229,10 +280,7 @@ function Prod() {
                 </div>
               </div>
 
-              <div
-                className="col-12 col-md-5 overflow-auto"
-                
-              >
+              <div className="col-12 col-md-5 overflow-auto">
                 {eElement.table && (
                   <table className="tabla_prod">
                     <thead>
@@ -345,9 +393,18 @@ function Prod() {
                         className="btns__prod d-flex justify-content-center align-items-center flex-column gap-3"
                         style={{ marginTop: "1em" }}
                       >
-                      {/* boton addcard que abre un modal */}
+                        {/* boton addcard que abre un modal */}
+
+                        {MSPhi && (
+                          <ModalCards
+                            state={MSPhi}
+                            setstate={setMSPhi}
+                            img={Phi}
+                          />
+                        )}
                         <button
-                          onClick={()=> setModalSelect({ ...eModalSelect, active: true, tittle: "CARD", img:Phi })}
+                          onClick={() => setMSPhi(!MSPhi)}
+                          // onClick={()=> setModalSelect({ ...eModalSelect, active: true, tittle: "CARD", img:Phi })}
                           className="btn"
                           style={{
                             background: "#FEF571",
@@ -361,7 +418,7 @@ function Prod() {
                         </button>
                         {/* boton upgrade abre un modal */}
                         <button
-                          onClick={()=> setModalText(!modalText)}
+                          onClick={() => setModalText(!modalText)}
                           className="btn"
                           style={{
                             background: "#FF6DAB",
@@ -396,30 +453,29 @@ function Prod() {
                   <div className="d-flex justify-content-center mt-3">
                     <table className="table__layout">
                       <tbody>
-                      <tr>
-                        <td>pure crystalline</td>
-                        <td>|</td>
-                        <td>0 MD</td>
-                      </tr>
-                      <tr>
-                        <td>Malana cream</td>
-                        <td>|</td>
-                        <td>0 MD</td>
-                      </tr>
+                        <tr>
+                          <td>pure crystalline</td>
+                          <td>|</td>
+                          <td>0 MD</td>
+                        </tr>
+                        <tr>
+                          <td>Malana cream</td>
+                          <td>|</td>
+                          <td>0 MD</td>
+                        </tr>
                       </tbody>
                     </table>
                   </div>
-                  
                 </div>
               </div>
             </>
-          }
+          )}
         </div>
       </div>
       {/* {<Footer />} */}
-      
-      <SelectCard state={eModalSelect} setstate={setModalSelect}/>
-      <Unlock  state={eModalUnlock} setstate={setModalUnlock}/>
+
+      {/* <SelectCard state={eModalSelect} setstate={setModalSelect}/> */}
+      <Unlock state={eModalUnlock} setstate={setModalUnlock} />
     </div>
   );
 }

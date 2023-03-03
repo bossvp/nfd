@@ -85,7 +85,98 @@ html {
 
 
 
+/* ModalCards */
+.modalCards{
+  width: 100%;
+  height: 60rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.modalCards_header{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.modalCards_header h2{
+  color: rgb(252, 163, 96);
+  font-size: 3.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
 
+.modalCards_cards{
+  background-color: rgba(108, 62, 62, 0.771);
+  height: 70%;
+}
+
+.modalCards_footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.modalCards_footer_btns{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.4rem;
+}
+.modalCards_footer_btns button {
+  border: none;
+  outline: none;
+  color: white;
+  background-color: rgb(29, 23, 11);
+  font-size: 1.9rem;
+  font-weight: 600;
+  border-radius: 0.8rem;
+  padding: 0.7rem 6rem;
+  margin: 0;
+  transition: background-color 0.4s ease-in-out;
+}
+.modalCards_footer_btns button:hover {
+  background-color: rgb(124, 92, 44);
+}
+.select_ModalCards{
+  border: 3px solid white;
+}
+
+
+.cards_modalCards{
+  background-color: red;
+  height: 35vh;
+  width: 100%;
+  padding: 0.4em 0;
+
+  overflow: hidden;
+  overflow-y: scroll;
+
+  display: grid;
+  grid-auto-rows: auto;
+  grid-template-columns: repeat(4, minmax(5em, 1fr ));
+  gap: 1em;
+}
+.card__ModalCards{
+      cursor: pointer;
+      background-color: #2A2927;
+      position: relative;
+      padding: 1em;
+      @include flexbox();
+      flex-direction: column;
+      width: 100%;
+      
+
+
+      img{
+          width: 100%;
+          pointer-events: none;
+
+      }
+  }
 
 
 /* cards-modals */
