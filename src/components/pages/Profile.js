@@ -9,11 +9,12 @@ import FormWallet from "../wallet-components/FormWallet";
 function Profile() {
   return (
     <div className="background__wallet">
+     
       <div className="container-fluid container__wallet">
         <div className="container__title">
           <h3 className="container__title-title">Profile</h3>
         </div>
-
+        
         <div className="row mt-5">
         
         
@@ -27,11 +28,9 @@ function Profile() {
          <WalletCard/> 
          <FormWallet/>
         </div>
-
         
-      </div>
 
-      {/* <Footer /> */}
+      </div>
     </div>
   )
 }

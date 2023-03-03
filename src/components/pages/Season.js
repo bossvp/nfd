@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Footer from "../Footer";
 import ImagesGroup from "../season-components/ImagesGroup";
 import InfoMision from "../season-components/InfoMision";
 import Level from "../season-components/Level";
@@ -8,7 +7,6 @@ import MissionCards from "../season-components/MissionCards";
 import OptionsMission from "../season-components/OptionsMission";
 
 function Season() {
-  // const [ePage, setPage] =useState(true)
 
   const [eWindow, setWindow] = useState(
     {

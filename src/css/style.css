@@ -12,10 +12,82 @@ html {
   font-family: "Rajdhani", sans-serif;
 }
 
+/* modalText */
+.bg_modalText {
+  background-color: #363636;
+  border-radius: 3rem !important;
+  border: 3px solid rgb(124, 92, 44);
+}
+.modalText {
+  width: 100%;
+  height: 60rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.modalText p{
+  font-size: 2rem;
+  margin: 0 3rem;
+  text-align: center;
+}
+.modalText_header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
 
-/* *{
-  border: .002px solid white;
-} */
+.modalText_header h2 {
+  color: rgb(252, 163, 96);
+  font-size: 3.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.modalText_header p {
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-align: center;
+  
+
+}
+.modalText_footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.modalText_footer_btns {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.4rem;
+}
+.modalText_footer_btns button {
+  border: none;
+  outline: none;
+  color: white;
+  background-color: rgb(29, 23, 11);
+  font-size: 1.9rem;
+  font-weight: 600;
+  border-radius: 0.8rem;
+  padding: 0.7rem 6rem;
+  margin: 0;
+  transition: background-color 0.4s ease-in-out;
+}
+.modalText_footer_btns button:hover {
+  background-color: rgb(124, 92, 44);
+}
+
+
+
+
+
+
 /* cards-modals */
 .modal__cards{
   background-color: blue;
@@ -749,6 +821,7 @@ header {
     background-color: #3a33334e;
     
   }
+  
 }
 
 
@@ -767,6 +840,8 @@ header .icono_bar {
   height: 40px;
   object-fit: cover;
 }
+
+
 
 .container__menu__layout .listAntiguo{
   display: none;
@@ -868,6 +943,9 @@ header .icono_bar {
 
   .container__menu__layout .listAntiguo{
     display: flex;
+  }
+  .container__menu__layout .abierto{
+    width: 100vw;
   }
 
 
@@ -2456,6 +2534,14 @@ header .icono_bar {
 .box__select {
   float: end;
   
+}
+
+.container_selects {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
 }
 
 @media (max-width: 768px) {

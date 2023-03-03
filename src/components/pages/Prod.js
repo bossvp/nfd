@@ -13,11 +13,17 @@ import SelectCard from "../Modals/SelectCard";
 import Unlock from "../Modals/Unlock";
 
 import briefcase from '../../img/briefcase-1.png'
+import ModalText from "../Modals/ModalText";
 
 
-import DemoModal from "../Modals/DemoModal"
+
 
 function Prod() {
+
+  // modalText
+  const [modalText, setModalText] = useState(false)
+
+
   const [active, setActive] = useState(false);
   const activarCard = () => {
     // alert('funciona')
@@ -146,7 +152,7 @@ function Prod() {
                     >
                       SELECT BAG
                     </button>
-                    <DemoModal state={eModalSelect} setstate={setModalSelect}/>
+                    <SelectCard state={eModalSelect} setstate={setModalSelect}/>
                   </div>
                   <div className="card__prod">
                     <img src={Satin} alt="" />
@@ -154,7 +160,8 @@ function Prod() {
                     <span></span>
                   </div>
                 </div>
-
+              {/* empty and locked slot */}
+                {modalText && <ModalText state={modalText} setState={setModalText}/>} 
                 <div
                   className="container__locked"
                   // style={{ marginLeft: "45px" }}
@@ -176,15 +183,15 @@ function Prod() {
                     <span></span>
                   </div>
 
-                  <div className="card__prod__locked_slot" onClick={()=> setModalUnlock(!eModalUnlock)}>
+                  <div className="card__prod__locked_slot" onClick={()=> setModalText(!modalText)}>
                     <p className="fw-bold pt-2">LOCKED SLOT</p>
                     <img src={PadLock} alt="" />
                   </div>
-                  <div className="card__prod__locked_slot" onClick={()=> setModalUnlock(!eModalUnlock)}>
+                  <div className="card__prod__locked_slot" onClick={()=> setModalText(!modalText)}>
                     <p className="fw-bold pt-2">LOCKED SLOT</p>
                     <img src={PadLock} alt="" />
                   </div>
-                  <div className="card__prod__locked_slot" onClick={()=> setModalUnlock(!eModalUnlock)}>
+                  <div className="card__prod__locked_slot" onClick={()=> setModalText(!modalText)}>
                     <p className="fw-bold pt-2">LOCKED SLOT</p>
                     <img src={PadLock} alt="" />
                   </div>
@@ -338,6 +345,7 @@ function Prod() {
                         className="btns__prod d-flex justify-content-center align-items-center flex-column gap-3"
                         style={{ marginTop: "1em" }}
                       >
+                      {/* boton addcard que abre un modal */}
                         <button
                           onClick={()=> setModalSelect({ ...eModalSelect, active: true, tittle: "CARD", img:Phi })}
                           className="btn"
@@ -351,8 +359,9 @@ function Prod() {
                         >
                           ADD CARD
                         </button>
+                        {/* boton upgrade abre un modal */}
                         <button
-                          onClick={()=> setModalUnlock(!eModalUnlock)}
+                          onClick={()=> setModalText(!modalText)}
                           className="btn"
                           style={{
                             background: "#FF6DAB",

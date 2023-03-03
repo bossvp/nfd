@@ -48,7 +48,9 @@ function Wallet() {
           <>
             {/* selects */}
             <div className="col-12 ">
-                <div className="box__select">
+
+            <div className="box__select">
+                {/* <div className="float-end"> */}
                   <div className="container_selects">
                     <div>
                       <Form.Select

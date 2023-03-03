@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Logo from "../../img/logo.png";
 import Footer from "../Footer";
 import Preloader from "./Preloader";
+import ModalGang from "../gangs-components/ModalGang";
 
 function Secret() {
   const [loading, setLoading] = useState(true)
@@ -24,6 +25,7 @@ function Secret() {
 
   return (
     <>
+    
       { loading &&
         <Preloader/>
       }
