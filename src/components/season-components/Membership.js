@@ -1,9 +1,7 @@
 import React, { useState } from "react";
-import CardCoffe from '../coffe-components/CardCoffe'
 import CardSeason from './CardSeason';
 import cardGold from '../../img/gold_pss.png'
-import SelectCard from "../Modals/SelectCard";
-
+import ModalCards from "../Modals/ModalCards";
 
 function Membership({btn,setText}) {
 
@@ -12,6 +10,8 @@ function Membership({btn,setText}) {
     img: "",
     tittle: "Card",
   });
+
+  const [MSMembership, setMSMembership] = useState(false)
 
 
   return (
@@ -51,7 +51,7 @@ function Membership({btn,setText}) {
                  <button  
                  style={{color:"white", fontWeight:"bold", background:"black",padding:"1.2rem", width:"14rem", height:"4rem", fontSize:"1.4rem", border:"none", borderRadius:"2rem", outline:"none", marginTop:"1.5rem"}}
                  
-                 onClick={()=> setModalSelect({ ...eModalSelect, active: true, tittle: "CARD", img:cardGold })}
+                 onClick={() => setMSMembership(!MSMembership)}
                  >
                      OPTION 1
                  </button>
@@ -81,8 +81,10 @@ function Membership({btn,setText}) {
             </div>
              
          </div>
-         <SelectCard state={eModalSelect} setstate={setModalSelect}/>
-         
+         {/* <SelectCard state={eModalSelect} setstate={setModalSelect}/> */}
+         {MSMembership && (
+            <ModalCards state={MSMembership} setstate={setMSMembership} img={cardGold} />
+          )}
        </>
      
     

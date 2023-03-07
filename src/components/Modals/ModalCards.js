@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Modal from "react-bootstrap/Modal";
-import s from "../Modals/stylesModals.module.scss"
 
 function ModalCards({ state, setstate, img }) {
     const [show, setShow] = useState(true);
@@ -11,18 +10,14 @@ function ModalCards({ state, setstate, img }) {
     };
     const handleShow = () => setShow(true);
     
-    // selector de cards
-    const selectorCards = (e) =>{
-        e.target.classList.toggle("select_ModalCards");
-        alert("hubo click")
-    }
+    // generador de cards
     const card = [];
     for (let i = 0; i < 21; i++) {
         card.push(
-            <div className="card__ModalCards" key={i} onClick={()=>selectorCards}>
+            <div className="card__ModalCards" key={i} onClick={(e)=>e.target.classList.toggle("select_ModalCards")}>
 
-                <img src={img} alt="" /> //falta el img
-                <p style={{fontWeight:"bold", margin:".8em 0 1.3em"}}>
+                <img src={img} alt="" style={{pointerEvents:"none"}}/>
+                <p style={{fontWeight:"bold", margin:".8em 0", textAlign:"center", pointerEvents:"none"}}>
                     BIKE (001)
                 </p>
 

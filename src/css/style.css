@@ -143,11 +143,11 @@ html {
 }
 .select_ModalCards{
   border: 3px solid white;
+  border-radius: .5em;
 }
 
 
 .cards_modalCards{
-  background-color: red;
   height: 35vh;
   width: 100%;
   padding: 0.4em 0;
@@ -160,23 +160,7 @@ html {
   grid-template-columns: repeat(4, minmax(5em, 1fr ));
   gap: 1em;
 }
-.card__ModalCards{
-      cursor: pointer;
-      background-color: #2A2927;
-      position: relative;
-      padding: 1em;
-      @include flexbox();
-      flex-direction: column;
-      width: 100%;
-      
 
-
-      img{
-          width: 100%;
-          pointer-events: none;
-
-      }
-  }
 
 
 /* cards-modals */
@@ -1046,6 +1030,7 @@ header .icono_bar {
     right: 0;
     height: 100%;
     width: 70%;
+    max-width: 386px;
     flex-direction: column;
     justify-content: center;
     gap: 3.6rem;
