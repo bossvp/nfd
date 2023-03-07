@@ -8,7 +8,7 @@ function ModalCards({ state, setstate, img }) {
       setShow(false);
       setstate(!state);
     };
-    const handleShow = () => setShow(true);
+    // const handleShow = () => setShow(true);
     
     // generador de cards
     const card = [];

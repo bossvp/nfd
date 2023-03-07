@@ -5,7 +5,7 @@ function TableLucky() {
     <>
     <div className="container-select-stats">
       <p className="text-center text-white h2 my-5 ">Select day: </p>
-      <select aria-label="Default select example">
+      <select aria-label="Default select example" className="fondoSelect" style={{margin: "0 1em"}}>
     <option>domingo , 6 de noviembre de 2022</option>
   </select>
     </div>

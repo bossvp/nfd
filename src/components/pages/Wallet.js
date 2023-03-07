@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 import Card from "../blend-components/Card";
-import Footer from "../Footer";
 import Form from "react-bootstrap/Form";
 import TableWallet from "../wallet-components/TableWallet";
-import WalletCard from "../wallet-components/WalletCard";
-import FormWallet from "../wallet-components/FormWallet";
+
 
 function Wallet() {
   const [eTabs, setTabs] = useState(

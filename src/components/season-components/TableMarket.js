@@ -27,7 +27,7 @@ function TableMarket() {
             <td>Napal</td>
             <td>13.84 -2.1%</td>
             <td>
-              <select name="" id="">
+              <select name="" id="" className="fondoSelect">
                 <option value="">MD Common - 13.84</option>
               </select>
             </td>
@@ -39,7 +39,7 @@ function TableMarket() {
             <td>Napal</td>
             <td>13.84 -2.1%</td>
             <td>
-              <select name="" id="">
+              <select name="" id="" className="fondoSelect">
                 <option value="">MD Common - 13.84</option>
               </select>
             </td>
@@ -51,7 +51,7 @@ function TableMarket() {
             <td>Napal</td>
             <td>13.84 -2.1%</td>
             <td>
-              <select name="" id="">
+              <select name="" id="" className="fondoSelect">
                 <option value="">MD Common - 13.84</option>
               </select>
             </td>

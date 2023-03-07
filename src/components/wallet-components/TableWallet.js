@@ -29,7 +29,7 @@ function TableWallet() {
               <td>Nepal Palm</td>
               <td>0.00298</td>
               <td>
-                <select>
+                <select className="fondoSelect form-select">
                   <option value="">Have at least 1 MD</option>
                 </select>
               </td>
@@ -44,7 +44,7 @@ function TableWallet() {
               <td>Nepal Palm</td>
               <td>0.00298</td>
               <td>
-                <select>
+                <select className="fondoSelect form-select">
                   <option value="">Have at least 1 MD</option>
                 </select>
               </td>

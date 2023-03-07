@@ -148,7 +148,7 @@ html {
 
 
 .cards_modalCards{
-  height: 35vh;
+  height: 50vh;
   width: 100%;
   padding: 0.4em 0;
 
@@ -527,20 +527,20 @@ html {
 
 .blend__box__options {
   display: none;
-
+border:.1em solid #767676; 
   position: absolute;
-  background-color: #000000;
+  background-color: #4c4c4c;
   color: white;
 
   top: 4em;
   z-index: 1000;
 }
 .blend__box__options div {
+  
   display: flex;
   justify-content: center;
   align-items: center;
   width: 15em;
-  border: 0.1em solid #561d05;
   cursor: pointer;
 
   font-size: 1.4em;
@@ -549,7 +549,7 @@ html {
 }
 
 .blend__box__options :hover {
-  background-color: #8462498f;
+  background-color: #1e90ff;
   color: #caa810;
 }
 
