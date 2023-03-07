@@ -1,15 +1,17 @@
 import React, { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 import Logo from "../img/logo.png";
-
+import ModalStats from "./Modals/ModalStats";
 import hat from "../img/hat.png"
 import level from "../img/level.png"
 import moustache from "../img/moustache.png"
 
 function Layout() {
+  const [mStats, setmStats] = useState(false)
   const [abrir, setAbrir] = useState(false);
   const [slistAssets,setSlistAssets] =useState(false)
   const [slistSeason,setSlistSeason] =useState(false)
+  
   return (
     <>
       <header style={{ zIndex: 999 }}>
@@ -188,7 +190,10 @@ function Layout() {
                 </svg>
               </Link>
             </li>
-            <li onClick={()=>setAbrir(!abrir)}>
+            <li onClick={()=>{
+              setAbrir(!abrir)}
+            
+            }>
               <Link to="/CoffeShop" className="layout__options__link">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -203,7 +208,10 @@ function Layout() {
               </Link>
             </li>
 
-            <li onClick={()=>setAbrir(!abrir)}>
+            <li onClick={()=>{
+              setAbrir(!abrir)
+              setmStats(!mStats)
+            }}>
               <Link
                 to=""
                 className="layout__options__link svg_statis"
@@ -221,6 +229,7 @@ function Layout() {
                   <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm7.93 9H13V4.07c3.61.45 6.48 3.32 6.93 6.93zM4 12c0-4.07 3.06-7.44 7-7.93v15.86c-3.94-.49-7-3.86-7-7.93zm9 7.93V13h6.93A8.002 8.002 0 0 1 13 19.93z" />
                 </svg>
 
+                {/* modal stats */}
                 <div className="modal__statis" style={{ flexDirection:"column", justifyContent:"space-around"}}>
                     <h1 style={{color:"white", fontWeight:"bold"}}>STATS</h1>
                     
@@ -272,6 +281,7 @@ function Layout() {
                       
                     </div>
                 </div>
+
               </Link>
             </li>
 
@@ -319,6 +329,7 @@ function Layout() {
               <path d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z" />
             </svg>
           </button>
+
         </section>
 
         <svg
@@ -331,7 +342,7 @@ function Layout() {
         </svg>
         
       </header>
-
+      {mStats && <ModalStats state={mStats} setState={setmStats}/>}
       <Outlet />
     </>
   );

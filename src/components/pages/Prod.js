@@ -9,7 +9,6 @@ import Planet from "../prod-components/Planet";
 import Territories from "../prod-components/Territories";
 import Neigh from "../prod-components/Neigh";
 import Shed from "../prod-components/Shed";
-import SelectCard from "../Modals/SelectCard";
 import Unlock from "../Modals/Unlock";
 
 import briefcase from "../../img/briefcase-1.png";
@@ -180,6 +179,7 @@ function Prod() {
                     <img
                       src={PadLock}
                       style={{ width: "8em", height: "8em" }}
+                      alt="padlock"
                     />
 
                     {MSBriefCase && (
