@@ -6,7 +6,7 @@ function TableRewards() {
     <>
       <div className="container-select-stats">
         <p className="text-center text-white h2 my-5 ">Select week: </p>
-        <select aria-label="Default select example" className="fondoSelect" style={{margin: "0 1em"}}>
+        <select aria-label="Default select example" className="select-stats" style={{margin: "0 1em", }}>
           <option>31 de Octubre de 2022</option>
         </select>
       </div>

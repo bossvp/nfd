@@ -45,6 +45,7 @@ html {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
+  text-align: center;
 }
 .modalText_header p {
   color: white;
@@ -1278,6 +1279,17 @@ background: rgb(96, 81, 55);    right: 0;
   overflow-y: scroll;
   z-index: 100;
 }
+.container__cards::-webkit-scrollbar {
+  display: block !important;
+  height: 3px;
+  width: 3px;
+  background-color: rgb(18, 2, 10);
+}
+.container__cards::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 4px;
+}
+
 @media (max-width: 768px) {
 
 }
@@ -1353,6 +1365,19 @@ background: rgb(96, 81, 55);    right: 0;
   gap: 0.5rem;
   max-height: 250px;
   overflow-y: scroll;
+
+}
+ 
+
+.container__locked::-webkit-scrollbar {
+  display: block !important;
+  height: 3px;
+  width: 3px;
+  background-color: rgb(18, 2, 10);
+}
+.container__locked::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 4px;
 }
 
 .card__prod__locked {
@@ -2932,7 +2957,7 @@ background: rgb(96, 81, 55);    right: 0;
 }
 @media (max-width: 768px) {
   .container__stats {
-    height: 89vh;
+    /* height: 89vh; */
     overflow: hidden;
     overflow-y: scroll;
   }
@@ -2985,16 +3010,25 @@ background: rgb(96, 81, 55);    right: 0;
   background-color: white;
   border-radius: 4px;
 }
-@media (max-width: 768px) {
+@media (max-width: 990px) {
   .table__week thead tr td {
-    font-size: 1.5rem;
-    padding: 0.1rem 0.5rem;
-    text-align: center;
+    
+    padding: 1rem 5rem !important;
+    text-align: center !important;
     
   }
-  
-  
 }
+@media (max-width: 768px) {
+  .table__week thead tr td {
+    font-size: 1.5rem !important;
+    padding: 0.1rem 0.5rem !important;
+    text-align: center !important;
+    
+  }
+}
+
+
+
 .button-stats {
   border: none;
   outline: none;
@@ -3019,6 +3053,18 @@ background: rgb(96, 81, 55);    right: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.select-stats {
+  background-color: rgb(0, 0, 0, 0.7) !important;
+  color: white !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.3rem !important;
+  padding: 0;
+  border: none !important;
+  outline: none !important;
+  margin: 0 1em
+  /*   text-align: center !important; */
 }
 
 @media (max-width: 768px) {
