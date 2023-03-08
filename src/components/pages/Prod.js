@@ -45,7 +45,7 @@ function Prod() {
     setElement({ ...tabs, [prop]: true });
   }
 
-  // windows
+  // cambio de ventana
   const [eWindow, setWindow] = useState({
     Planet: true,
     Territories: false,
@@ -54,6 +54,7 @@ function Prod() {
     Produce: false,
   });
 
+  // cambio de ventana prod
   function seteoWindow(prop) {
     const Windows = {
       Planet: false,
@@ -472,9 +473,8 @@ function Prod() {
           )}
         </div>
       </div>
-      {/* {<Footer />} */}
-
-      {/* <SelectCard state={eModalSelect} setstate={setModalSelect}/> */}
+      
+      
       <Unlock state={eModalUnlock} setstate={setModalUnlock} />
     </div>
   );

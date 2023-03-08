@@ -9,65 +9,37 @@ import Information from './Information';
 function Neigh({seteoWindow, setText, btnInfo, eText}) {
   const [eSelect, setSelect] = useState(false)
 
-  const selectorCards = (e) =>{
-    if(e.target.className){
-      e.target.classList.toggle("card__state__select");
-      setSelect(!eSelect)
-    } else{
-      const nodos = e.currentTarget.childNodes;
-      let contador = 0
-      for (let i = 0; i < nodos.length; i++) {
-        if(nodos[i].className){
-          contador++
-        }
-      }
-      if(contador < 1){
-        e.target.classList.toggle("card__state__select")
-        setSelect(!eSelect)
-      }
 
-    }    
 
+// limpia, selecciona la card y cambia el estado
+const selectCard = (e) =>{
+  const nodos = e.target.parentElement.childNodes;
+  for (let i = 0; i < nodos.length; i++) {
+    nodos[i].className = " "
+  }
+  e.target.classList.toggle("card__state__select")
+  setSelect(true)
 }
 
   return (
     <>
       <div className="col-12 col-md-9 ">
-        <div className="season__images" onClick={selectorCards}>
-          <div>
+        <div className="season__images" >
+          <div onClick={selectCard}>
             <img src={Associate} alt="" />
             <p>sativa</p>
           </div>
-          <div>
+          <div onClick={selectCard}>
             <img src={Untouchable} alt="" />
             <p>indica</p>
           </div>
-          <div>
+          <div onClick={selectCard}>
             <img src={Lieutenant} alt="" />
             <p>hybrid</p>
           </div>
           
         </div>
-        {/* <div className="row">
-          <div className="col-12 confirm-mision">
-            <h3 className="text-white fw-bold text-uppercase ">
-              {" "}
-              Confirm mission
-            </h3>
-            <button onClick={()=>{ 
-              if(eSelect){
-                seteoWindow("Shed")
-                setText({
-                  tittle: "Shed",
-                  subtitle: "Lorem ipsum dolor sit Amet.",  
-                })
-              }
-              
-              
-              }}>Start</button>
-      
-          </div>
-        </div> */}
+        
       </div>
       <Information seteoWindow={seteoWindow} setText={setText} eSelect={eSelect} eText={eText} color={"#B06A26"} btnInfo={btnInfo}/>
     </>

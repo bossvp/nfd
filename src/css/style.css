@@ -239,6 +239,7 @@ html {
 
   padding: 1em;
 
+  background-color: rgba(30, 29, 29, 0.94);
   
   margin-top: 1em;
   height: 75%;
@@ -1695,6 +1696,7 @@ header .icono_bar {
 }
 
 .season__images {
+  background-color: red;
   cursor: pointer;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 308px));
@@ -1753,10 +1755,10 @@ header .icono_bar {
 
 }
 .season__images .card__state__select {
-  border: 4px solid rgb(228, 2, 2);
+  border: 4px solid rgb(215, 222, 97);
 }
 .season__images .card__state__select:hover {
-  border: 4px solid rgb(228, 2, 2);
+  border:4px solid rgb(215, 222, 97);
 }
 
 @media (max-width: 768px) {
