@@ -12,6 +12,90 @@ html {
   font-family: "Rajdhani", sans-serif;
 }
 
+/* Login */
+
+
+.bg_login{
+  background-image: linear-gradient(
+      to right,
+      rgba(20, 20, 20, 0.404) 32%,
+      rgba(42, 42, 43, 0.404) 56%,
+      rgba(44, 43, 43, 0.438) 100%
+    ),
+    url("../img/login/bg-login.jpg");
+    
+  height: 100vh;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container__login{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.logo__login{
+  width: 18rem;
+}
+
+.box_btns__login{
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 25vh;
+}
+.box_btns__login a{
+  text-decoration: none;
+}
+
+
+
+.box_btns__login button{
+  width: 20rem;
+  padding: .3em .4em;
+  border-radius: 15px;
+  border: none;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #42322b;
+  color: white;
+  font-size: 1.7rem;
+  font-weight: 900;
+
+}
+.box_btns__login button:hover{
+  background-color: #6f5c4d;
+  opacity: .8
+}
+.box_btns__login button img{
+  width: 3rem;
+  user-select: none;
+}
+.container__login span{
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: #797978;
+}
+
+
+
+
+
+
+
+
+
 /* modalText */
 .bg_modalText {
   background-color: #363636;

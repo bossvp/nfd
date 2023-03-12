@@ -20,14 +20,14 @@ import Stats from './components/pages/Stats';
 import CardGang from './components/gangs-components/CardGang';
 import Profile from './components/pages/Profile';
 import Assets from './components/pages/Assets';
-
+import Login from './components/pages/Login';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter(
   [
   {
     path: "/",
-    element: <Secret />,
+    element: <Login />,
     // children: [
     //   {
     //     index:true,// al visitar layout se muestra este elemento de manera directa
@@ -35,6 +35,18 @@ const router = createBrowserRouter(
     //   },
     // ],
     errorElement:<Error/>
+  },
+  {
+    path: "/secret",
+    element: <Secret />,
+    children: [
+      {
+        index:true,// al visitar layout se muestra este elemento de manera directa
+        element:<Secret/>,
+      },
+     
+    ],
+        errorElement:<Error/>
   },
   {
     path: "/prod",

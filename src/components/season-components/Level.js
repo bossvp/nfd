@@ -6,49 +6,38 @@ import Lieutenant from "../../img/season/lieutenant.png";
 import Baron from "../../img/season/baron.png";
 
 function Level({btn, setText}) {
-    const [eSelect, setSelect] = useState(false)
-
-  const selectorCards = (e) =>{
-    if(e.target.className){
-      e.target.classList.toggle("card__state__select");
-      setSelect(!eSelect)
-    } else{
-      const nodos = e.currentTarget.childNodes;
-      
-      let contador = 0
-      for (let i = 0; i < nodos.length; i++) {
-        if(nodos[i].className){
-          contador++
-        }
-      }
-      if(contador < 1){
-        e.target.classList.toggle("card__state__select")
-        setSelect(!eSelect)
-      }
-
-    }    
-   
+  const [eSelect, setSelect] = useState(false)
 
 
+
+// limpia, selecciona la card y cambia el estado
+const selectCard = (e) =>{
+  const nodos = e.target.parentElement.childNodes;
+  for (let i = 0; i < nodos.length; i++) {
+    nodos[i].className = " "
+  }
+  e.target.classList.toggle("card__state__select")
+  setSelect(true)
 }
+
   return (
     <>
 
 <div className="col-12 col-md-8 ">
-      <div className="season__images" onClick={selectorCards}>
-        <div>
+      <div className="season__images" >
+        <div onClick={selectCard}>
           <img src={Associate} alt="" />
           <p>free</p>
         </div>
-        <div>
+        <div onClick={selectCard}>
           <img src={Untouchable} alt="" />
           <p>common</p>
         </div>
-        <div>
+        <div onClick={selectCard}>
           <img src={Lieutenant} alt="" />
           <p>silver</p>
         </div>
-        <div>
+        <div onClick={selectCard}>
           <img src={Baron} alt="" />
           <p>gold</p>
         </div>
