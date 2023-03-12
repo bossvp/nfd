@@ -2,15 +2,11 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../img/logo.png";
 import Footer from "../Footer";
-import Preloader from "./Preloader";
-import ModalGang from "../gangs-components/ModalGang";
+
+
 
 function Secret() {
-  const [loading, setLoading] = useState(true)
-
-  useEffect(() => {
-    setLoading(false)
-  }, []);
+  
   
 
   // useEffect(() => {
@@ -26,10 +22,7 @@ function Secret() {
   return (
     <>
     
-      { loading &&
-        <Preloader/>
-      }
-      {!loading &&
+      
         <div className="container__fondo">
         <div className="container">
           <nav className="navegation__secret">
@@ -93,7 +86,7 @@ function Secret() {
         </div>
         <Footer/>
       </div>
-      }
+      
     </>
   );
 }
