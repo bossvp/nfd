@@ -6,7 +6,7 @@ import PadLock from "../../img/padlock.png";
 
 function MissionCards() {
   return (
-    <div  className="col-12 col-md-6 ">
+    <div  className="col-12 col-md-5 ">
 
         <div className="container__cards_mission">
 

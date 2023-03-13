@@ -39,13 +39,13 @@ const router = createBrowserRouter(
   {
     path: "/secret",
     element: <Secret />,
-    children: [
-      {
-        index:true,// al visitar layout se muestra este elemento de manera directa
-        element:<Secret/>,
-      },
+    // children: [
+    //   {
+    //     index:true,// al visitar layout se muestra este elemento de manera directa
+    //     element:<Secret/>,
+    //   },
      
-    ],
+    // ],
         errorElement:<Error/>
   },
   {
