@@ -1323,6 +1323,15 @@ background: rgb(96, 81, 55);    right: 0;
     overflow-y: scroll;
   }
 }
+.box_info__prod{
+  flex-direction: column;
+}
+@media (max-width: 768px) {
+  .box_info__prod{
+    flex-direction: column-reverse;
+  }
+}
+
 .prod__title {
   font-size: 5rem !important;
   font-weight: 700;
