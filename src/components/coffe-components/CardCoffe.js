@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useState,useEffect } from "react";
 import Printer from "../../img/coffe/printer.png";
 import Moustache from "../../img/moustache.png";
 
+import Aos from "aos";
+import "aos/dist/aos.css"
+
+
 function CardCoffe() {
+
+  useEffect(()=>{
+    Aos.init({duration:1500});
+
+  },[])
+
   return (
-    <div className="cardcoffe" style={{ marginTop: "100px" }}>
+    <div className="cardcoffe" style={{ marginTop: "100px" }} >
     
       <div className="cont__coffe">
         <img src={Printer} alt="" className="container__coffe-img" />

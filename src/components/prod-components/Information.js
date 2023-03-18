@@ -13,7 +13,7 @@ function Information({eSelect,seteoWindow,setText, eText, color = "#B06A26", btn
 
   },[])
   return (
-    <div className="col-12 col-md-3 d-flex box_info__prod" data-aos="zoom-in" >
+    <div className="col-12 col-md-3 d-flex box_info__prod"  >
 
         <div>
           <div className='d-flex justify-content-center align-items-center' style={{marginBottom:"2.5rem"}}> 
