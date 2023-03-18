@@ -17,18 +17,35 @@ function Blend() {
     setValue(p);
     setActive(!active);
   }
+  // details
+    const [detail, setDetail] = useState(true);
+    
 
+  // generador de cards
   const cards = []
   for (let i = 0; i < 30; i++) {
       if(i === 3 || i > 9){
         cards.push(
-          <CardBlend text={"Finish"} key={i}/>
+          <CardBlend text={"Finish"} key={i+8} event={()=> setDetail(false)}/>
         )
       }
       cards.push(
-        <CardBlend key={i}/>
+        <CardBlend key={i+17675} event={()=> setDetail(true)}/>
       )
   }
+  const cardsCD2 = []
+  for (let j = 0; j < 30; j++) {
+      if(j === 2 || j > 9){
+        cardsCD2.push(
+          <CardBlend img={Level} text={"Finish"} key={j} event={()=> setDetail(false)}/>
+        )
+      }
+      cardsCD2.push(
+        <CardBlend img={Level} key={'b'+j} event={()=> setDetail(true)}/>
+      )
+  }
+
+  
 
 
   return (
@@ -110,6 +127,7 @@ function Blend() {
                 </div>
               </>
             )}
+
             {CD === "CD2" && (
               <>
                 <div className="row mb-2">
@@ -146,22 +164,7 @@ function Blend() {
                   className="container__cards__blend"
                   // style={{ marginLeft: "45px" }}
                 >
-                  <Card />
-                  <Card />
-                  <Card />
-                  <Card />
-                  <Card />
-                  <Card />
-                  <Card />
-                  <Card />
-                  <Card />
-                  <Card />
-                  <Card />
-                  <Card />
-                  <Card />
-                  <Card />
-                  <Card />
-                  <Card />
+                  {cardsCD2}
                 </div>
                 <div>
                   <p className="text-uppercase fw-bold h2 text-end pe-5 pt-4">
@@ -192,13 +195,16 @@ function Blend() {
             )}
           </div>
 
+        {/* aqui van los detalles */}
           <div className="col-12 col-md-4 ">
             <h2 className="text-uppercase fw-bold text-white text-center score-blend">
               Details
             </h2>
-
             
-            <Details />
+            {detail ? <Details/> : <Details vs="Finish"/>}
+            
+            
+
           </div>
         </div>
       </div>

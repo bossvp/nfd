@@ -1731,7 +1731,7 @@ background: rgb(96, 81, 55);    right: 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 0.5rem;
-  height: 35rem;
+  height: 40rem;
   overflow-y: scroll;
 }
 @media (max-width: 768px) {

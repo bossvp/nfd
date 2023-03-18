@@ -1,15 +1,15 @@
 import React from 'react'
 import bag from "../../img/wallet/bag.png";
-import CardBlend from './CardBlend';
 
-function Details() {
+function Details({vs}) {
 
+    
     const cards = []
     for (let i = 0; i < 6; i++) {
         cards.push(
-            <div className='card__details' key={i}>
+            <div className='card__details' key={i} style={vs === "Finish" ? {opacity:".4"}: {}}>
                 <div className='box__img'>
-                    <img src={bag} alt="" />
+                    <img src={bag} alt="" style={{userSelect:"none", pointerEvents:"none"}}/>
                 </div>
                 <h3>PHI S46368</h3>
                 <span>You own: 10</span>
