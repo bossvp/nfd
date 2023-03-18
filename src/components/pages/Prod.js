@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Shark from "../../img/shark.png";
 import Phi from "../../img/phi201.png";
 import PadLock from "../../img/padlock.png";
@@ -15,7 +15,18 @@ import briefcase from "../../img/briefcase-1.png";
 import ModalText from "../Modals/ModalText";
 import ModalCards from "../Modals/ModalCards";
 
+import Aos from "aos";
+import "aos/dist/aos.css"
+
+
 function Prod() {
+
+  useEffect(()=>{
+    Aos.init({duration:1500});
+
+  },[])
+
+
   // modalText
   const [modalText, setModalText] = useState(false);
 
@@ -78,20 +89,23 @@ function Prod() {
   const [eModalUnlock, setModalUnlock] = useState(false);
 
   return (
-    <div className="background__prod">
-      <div className="container-fluid">
-        <div className="row container__prod">
-          <div className="h1 text-uppercase text-white fw-bold d-flex justify-content-center flex-column align-items-start">
+    <div className="background__prod" >
+      <div className="container-fluid" >
+        <div className="row container__prod" >
+          <div className="h1 text-uppercase text-white fw-bold d-flex justify-content-center flex-column align-items-start"
+          >
             <p
               className="h1 text-uppercase text-white fw-bold prod__tittle"
               style={{ textAlign: "start", fontSize: "4rem" }}
+              
             >
               {eText.tittle}
               <span
                 className=" h3 text-uppercase text-white fw-bold"
                 style={{ marginLeft: ".8em" }}
+                
               >
-                {eWindow.Produce ? "PHEEBO | WEED | SATIVA | #1257" : ""}
+                {eWindow.Planet ? "" : "PHEEBO | WEED | SATIVA | #1257"}
               </span>
             </p>
           </div>
@@ -143,8 +157,8 @@ function Prod() {
           )}
           {eWindow.Produce && (
             <>
-              <div className="col-12 col-md-7">
-                <div className="row mb-2">
+              <div className="col-12 col-md-7" >
+                <div className="row mb-2" data-aos="zoom-in">
                   <div className="col-12 col-md-6">
                     <p className="text-uppercase fw-normal prod__subtitle">
                       Your Slots{" "}
@@ -159,8 +173,7 @@ function Prod() {
                 </div>
 
                 <div
-                  className="container__cards"
-                  // style={{ marginLeft: "45px" }}
+                  className="container__cards" data-aos="zoom-in"
                 >
                   <div
                     className="card__prod"
@@ -205,9 +218,10 @@ function Prod() {
                 {modalText && (
                   <ModalText state={modalText} setState={setModalText} />
                 )}
+
+
                 <div
-                  className="container__locked"
-                  // style={{ marginLeft: "45px" }}
+                  className="container__locked" data-aos="zoom-in"
                 >
                   <div
                     className="card__prod__locked"
@@ -249,9 +263,9 @@ function Prod() {
                   </div>
                 </div>
 
-                <div className="row mt-5">
+                <div className="row mt-5" data-aos="zoom-in">
                   <div className="col-12">
-                    <table className="table__layout">
+                    <table className="table__layout" >
                       <tbody>
                         <tr>
                           <td>bullets</td>
@@ -283,7 +297,7 @@ function Prod() {
 
               <div className="col-12 col-md-5 overflow-auto">
                 {eElement.table && (
-                  <table className="tabla_prod">
+                  <table className="tabla_prod" data-aos="zoom-in">
                     <thead>
                       <tr>
                         <td>Slot-type</td>
@@ -393,6 +407,7 @@ function Prod() {
                       <div
                         className="btns__prod d-flex justify-content-center align-items-center flex-column gap-3"
                         style={{ marginTop: "1em" }}
+                        data-aos="zoom-in"
                       >
                         {/* boton addcard que abre un modal */}
 
@@ -436,7 +451,7 @@ function Prod() {
                   </div>
                 )}
 
-                <div className="row">
+                <div className="row" data-aos="zoom-in">
                   <div className="mt-4 ">
                     <p className="text-uppercase fw-bolder h2 ">Production</p>
                     <div className="ms-5">

@@ -42,7 +42,7 @@ function Shed({ seteoWindow, setText, btnInfo, eText }) {
           style={{ display: "flex", flexDirection: "column" }}
         >
           <div className="float-end box__select">
-            <div className="container_selects">
+            <div className="container_selects" data-aos="zoom-in">
               <div>
                 <Form.Select
                   aria-label="Default select example"
@@ -80,7 +80,7 @@ function Shed({ seteoWindow, setText, btnInfo, eText }) {
             </div>
           </div>
         </div>
-        <div className="season__images" >
+        <div className="season__images" data-aos="zoom-in-down">
           {cards}
         </div>
       </div>

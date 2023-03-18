@@ -23,12 +23,12 @@ function Territories({seteoWindow, setText,eText, btnInfo}) {
   return (
     <>
       <div className="col-12 col-md-9 ">
-        <div className="season__images " >
-          <div onClick={selectCard}>
+        <div className="season__images " data-aos="zoom-in-down">
+          <div onClick={selectCard} >
             <img src={Associate} alt=""  />
             <p>WEED</p>
           </div>
-          <div onClick={selectCard}>
+          <div onClick={selectCard} >
             <img src={Untouchable} alt="" />
             <p>hash</p>
           </div>

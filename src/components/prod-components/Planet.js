@@ -1,6 +1,11 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
+
 import Associate from "../../img/season/associate.png";
 import Information from "./Information";
+
+import Aos from "aos";
+import "aos/dist/aos.css"
+
 
 function Planet({ seteoWindow, setText, eText, btnInfo }) {
   const [eSelect, setSelect] = useState(false);
@@ -26,18 +31,25 @@ function Planet({ seteoWindow, setText, eText, btnInfo }) {
   //     }
   //   }
   // };
-
+useEffect(()=>{
+      Aos.init({duration:1500});
+  
+    },[])
   return (
+
+    
+  
     <>
-      <div className="col-12 col-md-9 " style={{alignItems:"center"}}>
+      <div className="col-12 col-md-9 " style={{alignItems:"center"}} data-aos="zoom-in-down">
 
         <div
           className="season__images"
           style={{ justifyItems: "start"}}
-          // onClick={selectorCards}
+          
         >
           <div className={eSelect ? `${"card__state__select"}` : "" }
           onClick={()=>setSelect(!eSelect)}
+          
          >
             
             <img src={Associate} alt="" />

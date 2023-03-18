@@ -1,11 +1,19 @@
-import React from 'react'
+import React,{useEffect} from 'react'
+import Aos from "aos";
+import "aos/dist/aos.css"
+
+
 
 
 import iconInfo from '../../img/info.png'
 
 function Information({eSelect,seteoWindow,setText, eText, color = "#B06A26", btnInfo}) {
+  useEffect(()=>{
+    Aos.init({duration:1500});
+
+  },[])
   return (
-    <div className="col-12 col-md-3 d-flex box_info__prod" >
+    <div className="col-12 col-md-3 d-flex box_info__prod" data-aos="zoom-in" >
 
         <div>
           <div className='d-flex justify-content-center align-items-center' style={{marginBottom:"2.5rem"}}> 

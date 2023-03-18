@@ -3,19 +3,16 @@ import { Link } from "react-router-dom";
 import Logo from "../../img/logo.png";
 import Footer from "../Footer";
 
+import Aos from "aos";
+import "aos/dist/aos.css"
 
 
 function Secret() {
-  
-  
+  useEffect(()=>{
+    Aos.init({duration:1500});
 
-  // useEffect(() => {
+  },[])
 
-  //   setLoading(true);
-  //   setTimeout(()=>{
-  //     setLoading(false);
-  //   },3000);
-  // }, [])
   
   
 
@@ -43,7 +40,7 @@ function Secret() {
           </nav>
       
           <div className="row container" >
-            <div className="col-12 col-lg-6">
+            <div className="col-12 col-lg-6" data-aos="zoom-in-down">
               <h3 className="fw-bold mt-3 title__secret">Secret code</h3>
               <div className="ps-4">
                 <p className="my-0 mt-4">
