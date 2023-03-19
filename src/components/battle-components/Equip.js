@@ -35,10 +35,10 @@ useEffect(()=>{
   return (
     <>
       <div className="row" data-aos="fade-down">
-        <div className="col-12 col-md-2" >
+        <div className="col-12 col-md-5 col-lg-3" >
           <img src={Lieutenant} alt="" />
         </div>
-        <div className="col-12 col-md-3 mt-5" >
+        <div className="col-12 col-md-7 col-lg-4 mt-5" >
           <h2 className="text-white ">Level 20</h2>
           <div className="progress-bar__equip">
             <span className="progress-bar__equip-percentage">

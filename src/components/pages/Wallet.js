@@ -136,7 +136,7 @@ function Wallet() {
          {/* <FormWallet/> */}
         </div>
 
-        <div className="battle__buttons" style={{ marginTop: "140px" }}>
+        <div className="battle__buttons" >
           <button onClick={()=>seteo("Cards")} style={eTabs.Cards ? btnStyles: {}}>Game items</button>
           <button onClick={()=>seteo("Table")} style={eTabs.Table ? btnStyles: {}}>Logs W</button>
         </div>

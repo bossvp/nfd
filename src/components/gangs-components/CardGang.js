@@ -88,194 +88,20 @@ function CardGang() {
         </div>
 
         <div className="row " data-aos="fade-down">
-          <div className="col-12 col-xl-6 overflow-auto">
-            <div className="row">
-              <div className="col-12 col-md-6 mb-2">
+          <div className="col-12 col-lg-6 col-xl-6 overflow-auto">
+            <div className="row container__rank_gang">
+              <div className="col-12 col-md-6 col-lg-12 mb-2 col-xl-6">
                 {boxUserOne}
-                {/* <div className="card__gang mb-2">
-              <span>1</span>
-              <div className="card__gang-name">
-                <img src={User} alt="" />
-                <p >Username_01</p>
-                <div className="card__gang-name-punctuation">
-                  <img src={Brow} alt="" />
-                  <p>42500</p>
-                </div>
-              </div>
-            </div>
-            <div className="card__gang mb-2">
-              <span>1</span>
-              <div className="card__gang-name">
-                <img src={User} alt="" />
-                <p >Username_01</p>
-                <div className="card__gang-name-punctuation">
-                  <img src={Brow} alt="" />
-                  <p>42500</p>
-                </div>
-              </div>
-            </div>
-            <div className="card__gang mb-2">
-              <span>1</span>
-              <div className="card__gang-name">
-                <img src={User} alt="" />
-                <p >Username_01</p>
-                <div className="card__gang-name-punctuation">
-                  <img src={Brow} alt="" />
-                  <p>42500</p>
-                </div>
-              </div>
-            </div>
-            <div className="card__gang mb-2">
-              <span>1</span>
-              <div className="card__gang-name">
-                <img src={User} alt="" />
-                <p >Username_01</p>
-                <div className="card__gang-name-punctuation">
-                  <img src={Brow} alt="" />
-                  <p>42500</p>
-                </div>
-              </div>
-            </div>
-            <div className="card__gang mb-2">
-              <span>1</span>
-              <div className="card__gang-name">
-                <img src={User} alt="" />
-                <p >Username_01</p>
-                <div className="card__gang-name-punctuation">
-                  <img src={Brow} alt="" />
-                  <p>42500</p>
-                </div>
-              </div>
-            </div>
-            <div className="card__gang mb-2">
-              <span>1</span>
-              <div className="card__gang-name">
-                <img src={User} alt="" />
-                <p >Username_01</p>
-                <div className="card__gang-name-punctuation">
-                  <img src={Brow} alt="" />
-                  <p>42500</p>
-                </div>
-              </div>
-            </div>
-            <div className="card__gang mb-2">
-              <span>1</span>
-              <div className="card__gang-name">
-                <img src={User} alt="" />
-                <p >Username_01</p>
-                <div className="card__gang-name-punctuation">
-                  <img src={Brow} alt="" />
-                  <p>42500</p>
-                </div>
-              </div>
-            </div>
-            <div className="card__gang mb-2">
-              <span>1</span>
-              <div className="card__gang-name">
-                <img src={User} alt="" />
-                <p >Username_01</p>
-                <div className="card__gang-name-punctuation">
-                  <img src={Brow} alt="" />
-                  <p>42500</p>
-                </div>
-              </div>
-            </div> */}
+                
               </div>
 
-              <div className="col-12 col-md-6">
+              <div className="col-12 col-md-6 col-lg-12 col-xl-6">
                 {boxUserTwo}
-                {/* <div className="card__gang mb-2">
-                  <span>1</span>
-                  <div className="card__gang-name">
-                    <img src={User} alt="" />
-                    <p >Username_01</p>
-                    <div className="card__gang-name-punctuation">
-                      <img src={Brow} alt="" />
-                      <p>42500</p>
-                    </div>
-                  </div>
-                </div>
-              <div className="card__gang mb-2">
-                  <span>1</span>
-                  <div className="card__gang-name">
-                    <img src={User} alt="" />
-                    <p >Username_01</p>
-                    <div className="card__gang-name-punctuation">
-                      <img src={Brow} alt="" />
-                      <p>42500</p>
-                    </div>
-                  </div>
-                </div>
-              <div className="card__gang mb-2">
-                  <span>1</span>
-                  <div className="card__gang-name">
-                    <img src={User} alt="" />
-                    <p >Username_01</p>
-                    <div className="card__gang-name-punctuation">
-                      <img src={Brow} alt="" />
-                      <p>42500</p>
-                    </div>
-                  </div>
-                </div>
-              <div className="card__gang mb-2">
-                  <span>1</span>
-                  <div className="card__gang-name">
-                    <img src={User} alt="" />
-                    <p >Username_01</p>
-                    <div className="card__gang-name-punctuation">
-                      <img src={Brow} alt="" />
-                      <p>42500</p>
-                    </div>
-                  </div>
-                </div>
-              <div className="card__gang mb-2">
-                  <span>1</span>
-                  <div className="card__gang-name">
-                    <img src={User} alt="" />
-                    <p >Username_01</p>
-                    <div className="card__gang-name-punctuation">
-                      <img src={Brow} alt="" />
-                      <p>42500</p>
-                    </div>
-                  </div>
-                </div>
-              <div className="card__gang mb-2">
-                  <span>1</span>
-                  <div className="card__gang-name">
-                    <img src={User} alt="" />
-                    <p >Username_01</p>
-                    <div className="card__gang-name-punctuation">
-                      <img src={Brow} alt="" />
-                      <p>42500</p>
-                    </div>
-                  </div>
-                </div>
-              <div className="card__gang mb-2">
-                  <span>1</span>
-                  <div className="card__gang-name">
-                    <img src={User} alt="" />
-                    <p >Username_01</p>
-                    <div className="card__gang-name-punctuation">
-                      <img src={Brow} alt="" />
-                      <p>42500</p>
-                    </div>
-                  </div>
-                </div>
-              <div className="card__gang mb-2">
-                  <span>1</span>
-                  <div className="card__gang-name">
-                    <img src={User} alt="" />
-                    <p >Username_01</p>
-                    <div className="card__gang-name-punctuation">
-                      <img src={Brow} alt="" />
-                      <p>42500</p>
-                    </div>
-                  </div>
-                </div> */}
+                
               </div>
             </div>
           </div>
-          <div className="col-12 col-xl-6">
+          <div className="col-12 col-lg-6 col-xl-6">
             <div className="container__yourgang" >
               <h1
                 className="text-uppercase fw-bold text-center text-white"

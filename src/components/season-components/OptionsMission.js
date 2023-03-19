@@ -46,10 +46,10 @@ function OptionsMission() {
     }
 
   return (
-    <div className="col-12 col-md-7 ">
+    <div className="col-12 col-md-12 col-lg-9">
       <div className="container-fluid ">
         <div className="row">
-          <div className="col-12 col-xl-2">
+          <div className="col-12 col-md-3 col-lg-2 col-xl-2">
 
           
 
@@ -64,8 +64,7 @@ function OptionsMission() {
 
 
           </div>
-          <div
-            className="container__table_missions col-12 col-xl-10"
+          <div className="container__table_missions col-12 col-md-9 col-lg-9 col-xl-10"
             
           >
           { eTabs.Info &&

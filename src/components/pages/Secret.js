@@ -40,7 +40,7 @@ function Secret() {
           </nav>
       
           <div className="row container" >
-            <div className="col-12 col-lg-6" data-aos="zoom-in-down">
+            <div className="col-12 col-lg-12 col-xl-6" data-aos="zoom-in-down">
               <h3 className="fw-bold mt-3 title__secret">Secret code</h3>
               <div className="ps-4">
                 <p className="my-0 mt-4">

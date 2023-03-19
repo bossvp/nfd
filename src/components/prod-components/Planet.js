@@ -20,7 +20,7 @@ useEffect(()=>{
     
   
     <>
-      <div className="col-12 col-md-9 " style={{alignItems:"center"}} data-aos="fade-down">
+      <div className="col-12 col-md-7 col-lg-9 " style={{alignItems:"center"}} data-aos="fade-down">
 
         <div
           className="season__images"

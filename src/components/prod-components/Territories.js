@@ -22,7 +22,7 @@ function Territories({seteoWindow, setText,eText, btnInfo}) {
 
   return (
     <>
-      <div className="col-12 col-md-9 ">
+      <div className="col-12 col-md-7 col-lg-9">
         <div className="season__images " data-aos="fade-down">
           <div onClick={selectCard} >
             <img src={Associate} alt=""  />

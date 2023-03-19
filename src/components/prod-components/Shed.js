@@ -36,7 +36,7 @@ function Shed({ seteoWindow, setText, btnInfo, eText }) {
 
   return (
     <>
-      <div className="col-12 col-md-9 flex-column">
+      <div className="col-12 col-md-7 col-lg-9 flex-column">
         <div
           className="col-12 "
           style={{ display: "flex", flexDirection: "column" }}

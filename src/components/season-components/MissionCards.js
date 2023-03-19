@@ -21,7 +21,7 @@ function MissionCards() {
   const [modalText, setModalText] = useState(false);
   const [MSPhi, setMSPhi] = useState(false);
   return (
-    <div  className="col-12 col-md-5 " >
+    <div  className="col-12 col-md-12 col-lg-3" >
 
         <div className="container__cards_mission">
 
@@ -76,7 +76,7 @@ function MissionCards() {
 
         <table
                 className="table__layout__blend"
-                style={{ fontWeight: "700" ,marginTop:"120px"}}
+                style={{ fontWeight: "700" ,marginTop:"20px"}}
               >
                 <tbody>
                 <tr>

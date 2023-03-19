@@ -13,7 +13,7 @@ function Information({eSelect,seteoWindow,setText, eText, color = "#B06A26", btn
 
   },[])
   return (
-    <div className="col-12 col-md-3 d-flex box_info__prod"  >
+    <div className="col-12 col-md-5 col-lg-3 d-flex box_info__prod"  >
 
         <div>
           <div className='d-flex justify-content-center align-items-center' style={{marginBottom:"2.5rem"}}> 
@@ -32,25 +32,25 @@ function Information({eSelect,seteoWindow,setText, eText, color = "#B06A26", btn
           <h4 className="text-uppercase text-white fw-bold text-center p-0 m-0">
             Assets Multiplier
           </h4>
-          <p className="text-white text-center  " style={{ marginLeft: "70px" }}>
+          <p className="text-white text-center  " >
             0.5%
           </p>
           
           <h4 className="text-uppercase text-white fw-bold text-center p-0 m-0">
             Random
           </h4>
-          <p className="text-white text-center  " style={{ marginLeft: "70px" }}>
+          <p className="text-white text-center  " >
             After slot are lack, we add <br /> the random bonus
           </p>
           
           <h4 className="text-uppercase text-white fw-bold text-center p-0 m-0">
             total multiplier
           </h4>
-          <p className="text-white text-center  " style={{ marginLeft: "70px" }}>
+          <p className="text-white text-center  ">
             0.5% (+/-10%)
           </p>
           
-          <table className="table__layout mb-4" style={{  }}>
+          <table className="table__layout m-auto" style={{  }}>
           <tbody>
           <tr>
               <td>neutral bonus</td>

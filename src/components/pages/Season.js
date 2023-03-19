@@ -78,7 +78,6 @@ function Season() {
         </div>
       </div>
 
-      {/* <Footer /> */}
     </div>
   );
 }

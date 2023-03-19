@@ -157,7 +157,7 @@ function Prod() {
           )}
           {eWindow.Produce && (
             <>
-              <div className="col-12 col-md-7" >
+              <div className="col-12 col-md-5 col-lg-7" >
                 <div className="row mb-2" data-aos="zoom-in">
                   <div className="col-12 col-md-6">
                     <p className="text-uppercase fw-normal prod__subtitle">
@@ -295,7 +295,7 @@ function Prod() {
                 </div>
               </div>
 
-              <div className="col-12 col-md-5 overflow-auto">
+              <div className="col-12 col-md-7 col-lg-5">
                 {eElement.table && (
                   <table className="tabla_prod" >
                     <thead>
@@ -406,7 +406,7 @@ function Prod() {
                       </div>
                       <div
                         className="btns__prod d-flex justify-content-center align-items-center flex-column gap-3"
-                        style={{ marginTop: "1em" }}
+                        style={{ margin: "5em 0" }}
                         
                       >
                         {/* boton addcard que abre un modal */}

@@ -2,7 +2,7 @@ import React from "react";
 import UserImg from "../../img/wallet/img_profile.jpg";
 function WalletCard() {
   return (
-    <div className="col-12 col-lg-2">
+    <div className="col-12 col-lg-4">
       <div className="wallet__card">
         <div className="wallet-perfil">
           <img src={UserImg} alt="imagen perfil" />

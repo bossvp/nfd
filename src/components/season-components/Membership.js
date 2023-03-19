@@ -31,7 +31,7 @@ function Membership({btn,setText}) {
         
 
        <>
-         <div className="row col-12 " data-aos="fade-down">
+         <div className="row col-12 container__cards_membership" data-aos="fade-down">
              <div className="col-12 col-xl-2 my-2" 
              >
              <CardSeason/>
