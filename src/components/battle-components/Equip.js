@@ -1,4 +1,8 @@
-import React from "react";
+import React, { useState,useEffect } from "react";
+
+import Aos from "aos";
+import "aos/dist/aos.css"
+
 import EquipInfo from "./EquipInfo";
 import Lieutenant from "../../img/battle/lieutenant-neutral.png";
 
@@ -16,6 +20,12 @@ import Vs from "./Vs";
 
 
 function Equip({state, setState}) {
+  
+useEffect(()=>{
+  Aos.init({duration:1500});
+
+},[])
+
 
   let bg ={
     backgroundColor: "rgba(64,63,63,0.75)" ,
@@ -24,7 +34,7 @@ function Equip({state, setState}) {
 
   return (
     <>
-      <div className="row">
+      <div className="row" data-aos="fade-down">
         <div className="col-12 col-md-2" >
           <img src={Lieutenant} alt="" />
         </div>

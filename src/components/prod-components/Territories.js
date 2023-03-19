@@ -23,7 +23,7 @@ function Territories({seteoWindow, setText,eText, btnInfo}) {
   return (
     <>
       <div className="col-12 col-md-9 ">
-        <div className="season__images " data-aos="zoom-in-down">
+        <div className="season__images " data-aos="fade-down">
           <div onClick={selectCard} >
             <img src={Associate} alt=""  />
             <p>WEED</p>

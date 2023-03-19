@@ -1,17 +1,29 @@
-import React, { useState } from "react";
-import CardGang from "../gangs-components/CardGang";
+import React, { useState,useEffect } from "react";
+
+import Aos from "aos";
+import "aos/dist/aos.css"
+
 import MakeAndJoin from "../gangs-components/MakeAndJoin";
 import ModalGang from "../gangs-components/ModalGang";
 
 function Gangs() {
+
+  
+useEffect(()=>{
+  Aos.init({duration:1500});
+
+},[])
+
+
   const [emodal, setModal] = useState({
     Make: false,
     Join:false,
   })
 
+
   return (
     <div className="background__gangs">
-      <div className="container-fluid container__gangs">
+      <div className="container-fluid container__gangs" data-aos="fade-down">
         <div className="container__title">
           <h3 className="container__title-title">Gangs</h3>
           {/*  <h2 className="container__title-subtitle">

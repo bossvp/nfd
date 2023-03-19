@@ -1,11 +1,21 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
+
+import Aos from "aos";
+import "aos/dist/aos.css"
+
 import CardSeason from './CardSeason';
 import cardGold from '../../img/gold_pss.png'
 import ModalCards from "../Modals/ModalCards";
 
 function Membership({btn,setText}) {
 
-  const [eModalSelect,setModalSelect] = useState({
+  useEffect(()=>{
+    Aos.init({duration:1500});
+
+  },[])
+
+
+  const [eModalSelect, setModalSelect] = useState({
     active:false,
     img: "",
     tittle: "Card",
@@ -21,7 +31,7 @@ function Membership({btn,setText}) {
         
 
        <>
-         <div className="row col-12 ">
+         <div className="row col-12 " data-aos="fade-down">
              <div className="col-12 col-xl-2 my-2" 
              >
              <CardSeason/>

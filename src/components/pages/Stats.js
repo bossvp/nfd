@@ -1,10 +1,22 @@
-import React from "react";
+import React, { useState,useEffect } from "react";
+
+import Aos from "aos";
+import "aos/dist/aos.css"
+
 import Buttons from "../stats-components/Buttons";
 import TableLucky from "../stats-components/TableLucky";
 import TableRewards from "../stats-components/TableRewards";
 import TableWeek from "../stats-components/TableWeek";
-import { useState } from "react";
+
+
+
+
 function Stats() {
+  useEffect(()=>{
+    Aos.init({duration:1500});
+
+  },[])
+
   const [eTabs, setTabs] = useState({
     Week: true,
     Rewards: false,
@@ -26,7 +38,7 @@ function Stats() {
   };
   return (
     <div className="background__stats">
-      <div className="container-fluid container__stats">
+      <div className="container-fluid container__stats" data-aos="fade-down">
         <div className="container__title">
           <h3 className="container__title-title">stats</h3>
 
@@ -46,7 +58,6 @@ function Stats() {
         </div>
       </div>
 
-      {/* <Footer /> */}
     </div>
   );
 }

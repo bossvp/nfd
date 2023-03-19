@@ -1,10 +1,19 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
+
+import Aos from "aos";
+import "aos/dist/aos.css"
+
 import Card from "../blend-components/Card";
 import Form from "react-bootstrap/Form";
 import TableWallet from "../wallet-components/TableWallet";
 
 
 function Wallet() {
+  useEffect(()=>{
+    Aos.init({duration:1500});
+
+  },[])
+
   const [eTabs, setTabs] = useState(
     {
       Cards:true,
@@ -35,7 +44,7 @@ function Wallet() {
     }
   return (
     <div className="background__wallet">
-      <div className="container-fluid container__wallet">
+      <div className="container-fluid container__wallet" data-aos="fade-down">
         <div className="container__title">
           <h3 className="container__title-title">wallet</h3>
         </div>
@@ -88,7 +97,7 @@ function Wallet() {
                 </div>
             </div>
             {/* cards */}
-            <div className="container__cards__blend">
+            <div className="container__cards__blend" data-aos="fade-down">
 
               {cards}
                         

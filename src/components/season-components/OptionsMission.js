@@ -1,4 +1,8 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
+
+import Aos from "aos";
+import "aos/dist/aos.css"
+
 import EarlyFinish from "./EarlyFinish";
 import LockSlots from "./LockSlots";
 import TableLogs from "./TableLogs";
@@ -7,6 +11,12 @@ import TableMoveDeal from "./TableMoveDeal";
 import TabletTransfer from "./TabletTransfer";
 
 function OptionsMission() {
+
+  useEffect(()=>{
+    Aos.init({duration:1500});
+
+  },[])
+
 
   const [eTabs, setTabs] = useState(
     {
@@ -56,6 +66,7 @@ function OptionsMission() {
           </div>
           <div
             className="container__table_missions col-12 col-xl-10"
+            
           >
           { eTabs.Info &&
             <EarlyFinish/> 

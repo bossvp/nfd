@@ -1,8 +1,17 @@
-import React from "react";
+import React, { useState,useEffect } from "react";
+
+import Aos from "aos";
+import "aos/dist/aos.css"
+
 
 function TableMarket() {
+  useEffect(()=>{
+    Aos.init({duration:1500});
+
+  },[])
+
   return (
-    <table className="tabla_mision">
+    <table className="tabla_mision" data-aos="zoom-in">
       <thead>
         <tr>
           <td colSpan={6}>

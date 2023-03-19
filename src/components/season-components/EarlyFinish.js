@@ -1,8 +1,16 @@
-import React from 'react'
+import React, { useState,useEffect } from "react";
+
+import Aos from "aos";
+import "aos/dist/aos.css"
 
 function EarlyFinish() {
+  useEffect(()=>{
+    Aos.init({duration:1500});
+
+  },[])
+
   return (
-    <div style={{width:"215px",margin:"0 auto"}}>
+    <div style={{width:"215px",margin:"0 auto"}} data-aos="zoom-in">
         <h3 className='text-uppercase fw-bold bg-danger text-center py-1 mb-5'>early finish (22:48:17)</h3>
 
         <table

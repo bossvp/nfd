@@ -19,7 +19,7 @@ function ImagesGroup({btnStart}) {
   }
 
   return (
-    <div className="col-12 col-md-8 ">
+    <div className="col-12 col-md-8 " data-aos="fade-down">
       <div className="season__images" >
         <div onClick={selectCard}>
           <img src={Associate} alt="" />

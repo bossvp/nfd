@@ -90,7 +90,7 @@ function Prod() {
 
   return (
     <div className="background__prod" >
-      <div className="container-fluid" >
+      <div className="container-fluid" data-aos="fade-down">
         <div className="row container__prod" >
           <div className="h1 text-uppercase text-white fw-bold d-flex justify-content-center flex-column align-items-start"
           >
@@ -263,7 +263,7 @@ function Prod() {
                   </div>
                 </div>
 
-                <div className="row mt-5" data-aos="zoom-in">
+                <div className="row mt-5" >
                   <div className="col-12">
                     <table className="table__layout" >
                       <tbody>
@@ -297,7 +297,7 @@ function Prod() {
 
               <div className="col-12 col-md-5 overflow-auto">
                 {eElement.table && (
-                  <table className="tabla_prod" data-aos="zoom-in">
+                  <table className="tabla_prod" >
                     <thead>
                       <tr>
                         <td>Slot-type</td>
@@ -407,7 +407,7 @@ function Prod() {
                       <div
                         className="btns__prod d-flex justify-content-center align-items-center flex-column gap-3"
                         style={{ marginTop: "1em" }}
-                        data-aos="zoom-in"
+                        
                       >
                         {/* boton addcard que abre un modal */}
 
@@ -451,7 +451,7 @@ function Prod() {
                   </div>
                 )}
 
-                <div className="row" data-aos="zoom-in">
+                <div className="row" >
                   <div className="mt-4 ">
                     <p className="text-uppercase fw-bolder h2 ">Production</p>
                     <div className="ms-5">

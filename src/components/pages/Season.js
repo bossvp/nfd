@@ -1,4 +1,7 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
+
+import Aos from "aos";
+import "aos/dist/aos.css"
 import ImagesGroup from "../season-components/ImagesGroup";
 import InfoMision from "../season-components/InfoMision";
 import Level from "../season-components/Level";
@@ -7,6 +10,12 @@ import MissionCards from "../season-components/MissionCards";
 import OptionsMission from "../season-components/OptionsMission";
 
 function Season() {
+
+  useEffect(()=>{
+    Aos.init({duration:1500});
+
+  },[])
+
 
   const [eWindow, setWindow] = useState(
     {
@@ -34,7 +43,7 @@ function Season() {
 
   return (
     <div className="background__season">
-      <div className="container-fluid container__season">
+      <div className="container-fluid container__season" data-aos="fade-down">
       
       <div className="container__title">
             <h3 className="container__title-title">{eText.tittle}</h3>
@@ -43,7 +52,7 @@ function Season() {
             </h2>
           
           </div>
-        <div className="row ">
+        <div className="row">
         {eWindow.Membership  && 
 
             <Membership btn={seteo} setText={setText}/>

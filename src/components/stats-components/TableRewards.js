@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useState,useEffect } from "react";
+
+import Aos from "aos";
+import "aos/dist/aos.css"
 
 
 function TableRewards() {
+  useEffect(()=>{
+    Aos.init({duration:1500});
+
+  },[])
+
   return (
     <>
       <div className="container-select-stats">
@@ -11,7 +19,7 @@ function TableRewards() {
         </select>
       </div>
       <div className="d-flex justify-content-center">
-        <table className="table__week">
+        <table className="table__week" data-aos="fade-down">
           <thead>
             <tr>
               <td>#</td>

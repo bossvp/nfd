@@ -2,7 +2,7 @@ import React from "react";
 
 function TableWallet() {
   return (
-    <div >
+    <div data-aos="fade-down">
 
       <div className="title-layout">
         <p>

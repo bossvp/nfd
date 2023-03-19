@@ -1,11 +1,21 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
+
 import Card from "../blend-components/Card";
 import Footer from "../Footer";
 import Form from "react-bootstrap/Form";
 import imgBag from "../../img/wallet/bag.png"
+import Aos from "aos";
+import "aos/dist/aos.css"
 
 
 function Assets() {
+
+  useEffect(()=>{
+    Aos.init({duration:1500});
+
+  },[])
+
+
     let cards = [];
     for (let i = 0; i < 26; i++) {
         i < 4 ?
@@ -21,7 +31,7 @@ function Assets() {
 
   return (
     <div className="background__wallet">
-      <div className="container-fluid container__wallet">
+      <div className="container-fluid container__wallet" data-aos="fade-down">
         <div className="container__title">
           <h3 className="container__title-title">wallet</h3>
         </div>
@@ -73,7 +83,7 @@ function Assets() {
             </div>
 
             {/* cards */}
-            <div className="container__cards__blend">
+            <div className="container__cards__blend" data-aos="fade-down">
                 {cards}
                 <Card />
                 <Card />

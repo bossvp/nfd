@@ -1,4 +1,7 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect } from "react";
+
+import Aos from "aos";
+import "aos/dist/aos.css"
 import Card from '../blend-components/Card'
 import bike from '../../img/season/bike.png'
 import Phi from "../../img/phi201.png";
@@ -8,10 +11,17 @@ import ModalCards from '../Modals/ModalCards';
 
 
 function MissionCards() {
+
+  useEffect(()=>{
+    Aos.init({duration:1500});
+
+  },[])
+
+
   const [modalText, setModalText] = useState(false);
   const [MSPhi, setMSPhi] = useState(false);
   return (
-    <div  className="col-12 col-md-5 ">
+    <div  className="col-12 col-md-5 " >
 
         <div className="container__cards_mission">
 
@@ -95,7 +105,7 @@ function MissionCards() {
                   <td>-1200</td>
                 </tr>
                 </tbody>
-              </table>
+        </table>
     </div>
   )
 }

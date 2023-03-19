@@ -1,5 +1,8 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState,useEffect } from "react";
+
+import Aos from "aos";
+import "aos/dist/aos.css"
+
 import CardBattle from "../battle-components/CardBattle";
 import Equip from "../battle-components/Equip";
 import Vs from "../battle-components/Vs";
@@ -8,6 +11,13 @@ import Lieutenant from "../../img/battle/lieutenant-neutral.png";
 
 
 function Battle() {
+
+  useEffect(()=>{
+    Aos.init({duration:1500});
+
+  },[])
+
+
   const [eTab, setTab] = useState(true);
   let bg = {
     background: "#754F38",
@@ -15,7 +25,7 @@ function Battle() {
   return (
     <div className="background__battle">
     
-      <div className="container-fluid container__battle">
+      <div className="container-fluid container__battle" data-aos="fade-down">
         <div className="container__title">
           <h3 className="container__title-title">battle</h3>
           <h2 className="container__title-subtitle">
@@ -23,8 +33,8 @@ function Battle() {
           </h2>
         </div>
 
-        <div className="row ">
-          <div className="col-12">
+        <div className="row " data-aos="fade-down">
+          <div className="col-12" >
             <div className="layout__battle">
               {eTab && <Equip />}
 

@@ -10,27 +10,7 @@ import "aos/dist/aos.css"
 function Planet({ seteoWindow, setText, eText, btnInfo }) {
   const [eSelect, setSelect] = useState(false);
   
-//selector de cards
-  // const selectorCards = (e) => {
-    
-  //   if (e.target.className) {
-  //     console.log(e.currentTarget.childNodes)
-      
 
-  //   } else {
-  //     const nodos = e.currentTarget.childNodes;
-  //     let contador = 0;
-  //     for (let i = 0; i < nodos.length; i++) {
-  //       if (nodos[i].className) {
-  //         contador++;
-  //       }
-  //     }
-  //     if (contador < 1) {
-  //       e.target.classList.toggle("card__state__select");
-  //       setSelect(!eSelect);
-  //     }
-  //   }
-  // };
 useEffect(()=>{
       Aos.init({duration:1500});
   
@@ -40,7 +20,7 @@ useEffect(()=>{
     
   
     <>
-      <div className="col-12 col-md-9 " style={{alignItems:"center"}} data-aos="zoom-in-down">
+      <div className="col-12 col-md-9 " style={{alignItems:"center"}} data-aos="fade-down">
 
         <div
           className="season__images"

@@ -1,11 +1,22 @@
 
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
+
+import Aos from "aos";
+import "aos/dist/aos.css"
+
 import Associate from "../../img/season/associate.png";
 import Untouchable from "../../img/season/untouchable.png";
 import Lieutenant from "../../img/season/lieutenant.png";
 import Baron from "../../img/season/baron.png";
 
 function Level({btn, setText}) {
+
+  useEffect(()=>{
+    Aos.init({duration:1500});
+
+  },[])
+
+
   const [eSelect, setSelect] = useState(false)
 
 
@@ -23,7 +34,7 @@ const selectCard = (e) =>{
   return (
     <>
 
-<div className="col-12 col-md-8 ">
+<div className="col-12 col-md-8 " data-aos="fade-down" >
       <div className="season__images" >
         <div onClick={selectCard}>
           <img src={Associate} alt="" />

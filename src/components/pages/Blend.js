@@ -1,14 +1,23 @@
-import React, { useState } from "react";
-import Card from "../blend-components/Card";
+import React, { useState,useEffect } from "react";
 
-import Hat from "../../img/hat.png";
 import Level from "../../img/level.png";
-import Moustache from "../../img/moustache.png";
 import iconOptions from "../../img/season/options.png";
 import CardBlend from "../blend-components/CardBlend";
 import Details from "../blend-components/Details";
 
+import Aos from "aos";
+import "aos/dist/aos.css"
+
+
 function Blend() {
+
+  useEffect(()=>{
+    Aos.init({duration:1500});
+
+  },[])
+
+
+
   const [value, setValue] = useState("MD COMMON");
   const [active, setActive] = useState(false);
   const [CD, setCD] = useState("CD1");
@@ -50,9 +59,10 @@ function Blend() {
 
   return (
     <div className="background__blend">
-      <div className="container-fluid">
+      <div className="container-fluid" data-aos="fade-down">
         <div className="row container__blend">
-          <div className="col-12 col-md-8">
+
+          <div className="col-12 col-md-8"  >
             <div className="box_title__blend">
               <p className="text-uppercase fw-bold prod__title ms-4">Blend</p>
               <div className="btns__blend">
@@ -94,7 +104,7 @@ function Blend() {
                   </div>
                 </div>
                 <div
-                  className="container__cards__blend"
+                  className="container__cards__blend "  data-aos="fade-down"
                   
                 >
                 {cards}
@@ -161,8 +171,7 @@ function Blend() {
                   </div>
                 </div>
                 <div
-                  className="container__cards__blend"
-                  // style={{ marginLeft: "45px" }}
+                  className="container__cards__blend" data-aos="fade-down"
                 >
                   {cardsCD2}
                 </div>
@@ -196,7 +205,7 @@ function Blend() {
           </div>
 
         {/* aqui van los detalles */}
-          <div className="col-12 col-md-4 ">
+          <div className="col-12 col-md-4 " >
             <h2 className="text-uppercase fw-bold text-white text-center score-blend">
               Details
             </h2>
