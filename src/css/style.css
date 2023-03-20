@@ -3367,12 +3367,7 @@ margin: 0;
   padding: 0 3rem;
 }
 
-/* style={{
-  display: "block",
-  overflowX: "auto",
-  overflowY: "auto",
-  height: "400px",
-}} */
+
 
 .table__week thead tr td {
   font-size: 2rem;
