@@ -7,8 +7,10 @@ import Information from "./Information";
 
 import Form from "react-bootstrap/Form";
 
-function Shed({ seteoWindow, setText, btnInfo, eText }) {
+function Shed({ seteoWindow, setText, btnInfo, eText,valueSub,
+  setValueSub, }) {
   const [eSelect, setSelect] = useState(false);
+  const [value, setValue] = useState("")
 
   // limpia, selecciona la card y cambia el estado
   const selectCard = (e) =>{
@@ -18,7 +20,7 @@ function Shed({ seteoWindow, setText, btnInfo, eText }) {
     }
     e.target.classList.toggle("card__state__select")
     setSelect(true)
-  }
+    setValue(" | " + e.target.textContent)  }
 
   const cards = [];
   const img = [Associate, Untouchable, Lieutenant, Baron];
@@ -91,6 +93,9 @@ function Shed({ seteoWindow, setText, btnInfo, eText }) {
         eText={eText}
         color={"#AA1C3A"}
         btnInfo={btnInfo}
+        valueSub={valueSub}      
+        setValueSub={setValueSub}
+        value={value}
       />
     </>
   );

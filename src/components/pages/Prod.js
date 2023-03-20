@@ -26,6 +26,9 @@ function Prod() {
 
   },[])
 
+  // subtitulo
+ const [valueSub, setValueSub] = useState("PHEEBO | ")
+
 
   // modalText
   const [modalText, setModalText] = useState(false);
@@ -105,7 +108,7 @@ function Prod() {
                 style={{ marginLeft: ".8em" }}
                 
               >
-                {eWindow.Planet ? "" : "PHEEBO | WEED | SATIVA | #1257"}
+                {eWindow.Planet ? "" : valueSub}
               </span>
             </p>
           </div>
@@ -132,6 +135,8 @@ function Prod() {
                 subtitle: "Lorem ipsum dolor sit Amet.",
                 set: "Neigh",
               }}
+              valueSub={valueSub}
+              setValueSub={setValueSub}
             />
           )}
           {eWindow.Neigh && (
@@ -144,6 +149,9 @@ function Prod() {
                 subtitle: "Lorem ipsum dolor sit Amet.",
                 set: "Shed",
               }}
+              valueSub={valueSub}
+              setValueSub={setValueSub}
+              
             />
           )}
 
@@ -153,6 +161,8 @@ function Prod() {
               setText={setText}
               eText={eText}
               btnInfo={{ tittle: "PRODUCE NFD", subtitle: "", set: "Produce" }}
+              valueSub={valueSub}
+              setValueSub={setValueSub}
             />
           )}
           {eWindow.Produce && (
