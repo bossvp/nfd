@@ -7,7 +7,8 @@ import Aos from "aos";
 import "aos/dist/aos.css"
 
 
-function Planet({ seteoWindow, setText, eText, btnInfo }) {
+function Planet({ seteoWindow, setText, eText, btnInfo,valueSub,
+  setValueSub, }) {
   const [eSelect, setSelect] = useState(false);
   
 
@@ -15,6 +16,29 @@ useEffect(()=>{
       Aos.init({duration:1500});
   
     },[])
+
+
+
+
+
+    const [value, setValue] = useState("")
+    const selectCard = (e) => {
+      const nodos = e.target.parentElement.childNodes;
+      for (let i = 0; i < nodos.length; i++) {
+        nodos[i].className = " ";
+      }
+      e.target.classList.toggle("card__state__select");
+      setSelect(true);
+  
+      
+      setValue(e.target.textContent)
+    };
+
+
+
+
+
+
   return (
 
     
@@ -28,7 +52,7 @@ useEffect(()=>{
           
         >
           <div className={eSelect ? `${"card__state__select"}` : "" }
-          onClick={()=>setSelect(!eSelect)}
+          onClick={selectCard}
           
          >
             
@@ -40,7 +64,9 @@ useEffect(()=>{
         
       </div>
 
-      <Information seteoWindow={seteoWindow} setText={setText} eSelect={eSelect} eText={eText} color={"#B06A26"} btnInfo={btnInfo}/>
+      <Information seteoWindow={seteoWindow} setText={setText} eSelect={eSelect} eText={eText} color={"#B06A26"} btnInfo={btnInfo} valueSub={valueSub}      
+        setValueSub={setValueSub}
+        value={value}/>
 
     </>
   );

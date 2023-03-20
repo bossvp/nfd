@@ -27,7 +27,7 @@ function Prod() {
   },[])
 
   // subtitulo
- const [valueSub, setValueSub] = useState("PHEEBO | ")
+ const [valueSub, setValueSub] = useState(" ")
 
 
   // modalText
@@ -123,6 +123,8 @@ function Prod() {
                 subtitle: "Lorem ipsum dolor sit Amet.",
                 set: "Territories",
               }}
+              valueSub={valueSub}
+              setValueSub={setValueSub}
             />
           )}
           {eWindow.Territories && (

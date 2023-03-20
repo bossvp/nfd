@@ -15,6 +15,20 @@ function Information({
   setValueSub,
   value
 }) {
+
+  function click() {
+    if (eSelect) {
+      seteoWindow(btnInfo.set);
+      setText({
+        tittle: btnInfo.tittle,
+        subtitle: btnInfo.subtitle,
+
+      });
+    setValueSub(valueSub + value)
+    }
+  }
+
+
   useEffect(() => {
     Aos.init({ duration: 1500 });
   }, []);
@@ -97,17 +111,7 @@ function Information({
               color: "white",
               fontWeight: "bold",
             }}
-            onClick={() => {
-              if (eSelect) {
-                seteoWindow(btnInfo.set);
-                setText({
-                  tittle: btnInfo.tittle,
-                  subtitle: btnInfo.subtitle,
-                });
-                setValueSub(valueSub +value)
-                
-              }
-            }}
+            onClick={click}
           >
             NEXT
           </button>

@@ -26,7 +26,7 @@ function Territories({
     setSelect(true);
 
     
-    setValue(e.target.textContent)
+    setValue(" | " + e.target.textContent)
   };
 
   return (

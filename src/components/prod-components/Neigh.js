@@ -6,7 +6,7 @@ import Baron from "../../img/season/baron.png";
 import Information from "./Information";
 
 function Neigh({ seteoWindow, setText, btnInfo, eText,valueSub,
-  setValueSub, }) {
+  setValueSub }) {
   const [eSelect, setSelect] = useState(false);
   const [value, setValue] = useState("")
   // limpia, selecciona la card y cambia el estado
