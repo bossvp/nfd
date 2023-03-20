@@ -21,7 +21,7 @@ function MissionCards() {
   const [modalText, setModalText] = useState(false);
   const [MSPhi, setMSPhi] = useState(false);
   return (
-    <div  className="col-12 col-md-12 col-lg-3" >
+    <div  className="col-12 col-md-12 col-lg-3 col-xl-5" >
 
         <div className="container__cards_mission">
 
